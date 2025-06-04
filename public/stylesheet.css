@@ -1,0 +1,77 @@
+/* MARK: General  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: var(--font);
+    view-transition-name: default;
+}
+
+main {
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    /* transition: margin-top 0.2s ease-in-out; */
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --header-font: "poppins", sans-serif;
+    --body-font: "Overpass", sans-serif;
+
+    --font-size-xs: 0.75rem;
+    --font-size-s: 1rem;
+
+    --border-radius-tile: 2px;
+    --border-radius-button: 4px;
+
+    --padding-button: 8px 16px;
+    --padding-tile: 8px 10px;
+
+    --text-color: #161616;
+    --alt-text-color: #ffffff;
+    --primary-color: #005e5e;
+    --secondary-color: #49e06d;
+    --background-color: #f4f4f4;
+    --secondary-background-color: #afd7f4;
+    --secondary-background-color-light: #afd7f48b;
+    --hightlight-color: #fff381;
+    --hightlight-color-light: #fff381;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*      MARK: 404     */
+.h1404 {
+    font-size: var(--font-size-6xl);
+    justify-self: center;
+    padding-left: 5%;
+}
+
+.h2404 {
+    font-size: var(--font-size-6xl);
+    justify-self: center;
+    padding-left: 5%;
+}
+
+.p404 {
+    font-size: var(--font-size-lg);
+    justify-self: center;
+    padding-left: 5%;
+}
+
+@view-transition {
+    navigation: auto;
+}
