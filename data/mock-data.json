@@ -1,0 +1,1506 @@
+{
+  "users": [
+    {
+      "id": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+      "name": "Alex Johnson",
+      "email": "alex.johnson@example.com",
+      "createdAt": "2025-01-15T08:30:00.000Z",
+      "updatedAt": "2025-01-15T08:30:00.000Z"
+    },
+    {
+      "id": "6b5c4d3e-2f1a-4b5c-8d9e-7f6g5h4i3j2",
+      "name": "Maya Rodriguez",
+      "email": "maya.rodriguez@example.com",
+      "createdAt": "2025-01-20T10:45:00.000Z",
+      "updatedAt": "2025-01-20T10:45:00.000Z"
+    },
+    {
+      "id": "3e4f5g6h-7i8j-9k0l-1m2n-3o4p5q6r7s8",
+      "name": "Sam Taylor",
+      "email": "sam.taylor@example.com",
+      "createdAt": "2025-02-05T14:20:00.000Z",
+      "updatedAt": "2025-02-05T14:20:00.000Z"
+    },
+    {
+      "id": "9a8b7c6d-5e4f-3g2h-1i0j-9k8l7m6n5o4",
+      "name": "Jamie Patel",
+      "email": "jamie.patel@example.com",
+      "createdAt": "2025-02-10T09:15:00.000Z",
+      "updatedAt": "2025-02-10T09:15:00.000Z"
+    },
+    {
+      "id": "2c3d4e5f-6g7h-8i9j-0k1l-2m3n4o5p6q7",
+      "name": "Robin Chen",
+      "email": "robin.chen@example.com",
+      "createdAt": "2025-03-01T11:30:00.000Z",
+      "updatedAt": "2025-03-01T11:30:00.000Z"
+    },
+    {
+      "id": "7d8e9f0a-1b2c-3d4e-5f6g-7h8i9j0k1l2",
+      "name": "Jordan Smith",
+      "email": "jordan.smith@example.com",
+      "createdAt": "2025-03-15T09:45:00.000Z",
+      "updatedAt": "2025-03-15T09:45:00.000Z"
+    },
+    {
+      "id": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+      "name": "Taylor Nguyen",
+      "email": "taylor.nguyen@example.com",
+      "createdAt": "2025-03-22T14:10:00.000Z",
+      "updatedAt": "2025-03-22T14:10:00.000Z"
+    },
+    {
+      "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o7",
+      "name": "Casey Williams",
+      "email": "casey.williams@example.com",
+      "createdAt": "2025-04-05T10:25:00.000Z",
+      "updatedAt": "2025-04-05T10:25:00.000Z"
+    },
+    {
+      "id": "8t9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3",
+      "name": "Morgan Lee",
+      "email": "morgan.lee@example.com",
+      "createdAt": "2025-05-12T08:50:00.000Z",
+      "updatedAt": "2025-05-12T08:50:00.000Z"
+    },
+    {
+      "id": "5i6j7k8l-9m0n-1o2p-3q4r-5s6t7u8v9w0",
+      "name": "Quinn Garcia",
+      "email": "quinn.garcia@example.com",
+      "createdAt": "2025-05-28T13:40:00.000Z",
+      "updatedAt": "2025-05-28T13:40:00.000Z"
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "name": "Dr. Elena Rodriguez",
+      "email": "elena.rodriguez@example.com",
+      "createdAt": "2025-01-08T07:15:00.000Z",
+      "updatedAt": "2025-01-08T07:15:00.000Z"
+    },
+    {
+      "id": "b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q",
+      "name": "Michael Chen",
+      "email": "m.chen@example.com",
+      "createdAt": "2025-01-25T14:22:00.000Z",
+      "updatedAt": "2025-01-25T14:22:00.000Z"
+    },
+    {
+      "id": "c3d4e5f6-g7h8-9i0j-1k2l-3m4n5o6p7q8r",
+      "name": "Dr. Sarah Thompson",
+      "email": "sarah.thompson@example.com",
+      "createdAt": "2025-02-12T09:35:00.000Z",
+      "updatedAt": "2025-02-12T09:35:00.000Z"
+    },
+    {
+      "id": "d4e5f6g7-h8i9-0j1k-2l3m-4n5o6p7q8r9s",
+      "name": "Ahmed Hassan",
+      "email": "ahmed.hassan@example.com",
+      "createdAt": "2025-02-28T16:40:00.000Z",
+      "updatedAt": "2025-02-28T16:40:00.000Z"
+    },
+    {
+      "id": "e5f6g7h8-i9j0-1k2l-3m4n-5o6p7q8r9s0t",
+      "name": "Dr. Lisa Wang",
+      "email": "lisa.wang@example.com",
+      "createdAt": "2025-03-08T11:18:00.000Z",
+      "updatedAt": "2025-03-08T11:18:00.000Z"
+    },
+    {
+      "id": "f6g7h8i9-j0k1-2l3m-4n5o-6p7q8r9s0t1u",
+      "name": "Roberto Silva",
+      "email": "roberto.silva@example.com",
+      "createdAt": "2025-03-20T12:55:00.000Z",
+      "updatedAt": "2025-03-20T12:55:00.000Z"
+    },
+    {
+      "id": "g7h8i9j0-k1l2-3m4n-5o6p-7q8r9s0t1u2v",
+      "name": "Dr. Anna Kowalski",
+      "email": "anna.kowalski@example.com",
+      "createdAt": "2025-04-02T08:30:00.000Z",
+      "updatedAt": "2025-04-02T08:30:00.000Z"
+    },
+    {
+      "id": "h8i9j0k1-l2m3-4n5o-6p7q-8r9s0t1u2v3w",
+      "name": "James Mitchell",
+      "email": "james.mitchell@example.com",
+      "createdAt": "2025-04-18T15:12:00.000Z",
+      "updatedAt": "2025-04-18T15:12:00.000Z"
+    },
+    {
+      "id": "i9j0k1l2-m3n4-5o6p-7q8r-9s0t1u2v3w4x",
+      "name": "Dr. Priya Sharma",
+      "email": "priya.sharma@example.com",
+      "createdAt": "2025-05-03T10:25:00.000Z",
+      "updatedAt": "2025-05-03T10:25:00.000Z"
+    },
+    {
+      "id": "j0k1l2m3-n4o5-6p7q-8r9s-0t1u2v3w4x5y",
+      "name": "Dr. David Kim",
+      "email": "david.kim@example.com",
+      "createdAt": "2025-05-18T13:45:00.000Z",
+      "updatedAt": "2025-05-18T13:45:00.000Z"
+    }
+  ],
+  "experiments": [
+    {
+      "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+      "name": "Soybean Growth Analysis",
+      "description": "Field experiment analyzing growth patterns of different soybean varieties under varying irrigation conditions.",
+      "status": "active",
+      "visibility": "public",
+      "embargoIntervalDays": 30,
+      "createdBy": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+      "createdAt": "2025-04-10T09:00:00.000Z",
+      "updatedAt": "2025-05-15T14:30:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "plot_id",
+            "type_name": "string",
+            "type_text": "Plot identifier"
+          },
+          {
+            "name": "variety",
+            "type_name": "string",
+            "type_text": "Soybean variety"
+          },
+          {
+            "name": "irrigation_level",
+            "type_name": "int",
+            "type_text": "Irrigation level in mm/day"
+          },
+          {
+            "name": "height_cm",
+            "type_name": "float",
+            "type_text": "Plant height in centimeters"
+          },
+          {
+            "name": "leaf_count",
+            "type_name": "int",
+            "type_text": "Number of leaves per plant"
+          },
+          {
+            "name": "measurement_date",
+            "type_name": "datetime",
+            "type_text": "Date and time of measurement"
+          }
+        ],
+        "rows": [
+          ["A1", "Williams82", "10", "45.3", "24", "2025-04-15T10:00:00.000Z"],
+          ["A2", "Williams82", "20", "52.1", "28", "2025-04-15T10:15:00.000Z"],
+          ["A3", "Williams82", "30", "58.7", "32", "2025-04-15T10:30:00.000Z"],
+          ["B1", "Jack", "10", "42.8", "22", "2025-04-15T11:00:00.000Z"],
+          ["B2", "Jack", "20", "50.2", "26", "2025-04-15T11:15:00.000Z"],
+          ["B3", "Jack", "30", "55.9", "30", "2025-04-15T11:30:00.000Z"],
+          ["C1", "LD00-3309", "10", "47.5", "25", "2025-04-15T12:00:00.000Z"],
+          ["C2", "LD00-3309", "20", "54.3", "29", "2025-04-15T12:15:00.000Z"],
+          ["C3", "LD00-3309", "30", "60.1", "33", "2025-04-15T12:30:00.000Z"]
+        ],
+        "totalRows": 108,
+        "truncated": true
+      }
+    },
+    {
+      "id": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7",
+      "name": "Corn Drought Tolerance",
+      "description": "Evaluation of drought tolerance in genetically modified corn varieties.",
+      "status": "published",
+      "visibility": "public",
+      "embargoIntervalDays": 60,
+      "createdBy": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+      "createdAt": "2025-03-05T11:20:00.000Z",
+      "updatedAt": "2025-06-01T16:45:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "plot_id",
+            "type_name": "string",
+            "type_text": "Plot identifier"
+          },
+          {
+            "name": "genotype",
+            "type_name": "string",
+            "type_text": "Corn genotype"
+          },
+          {
+            "name": "water_deficit",
+            "type_name": "float",
+            "type_text": "Water deficit percentage"
+          },
+          {
+            "name": "yield_kg_ha",
+            "type_name": "float",
+            "type_text": "Yield in kg per hectare"
+          },
+          {
+            "name": "plant_stress_index",
+            "type_name": "float",
+            "type_text": "Measured stress index (0-10)"
+          }
+        ],
+        "rows": [
+          ["P1", "Pioneer3939", "0", "12540.5", "0.8"],
+          ["P2", "Pioneer3939", "25", "10325.2", "2.5"],
+          ["P3", "Pioneer3939", "50", "7845.8", "5.2"],
+          ["D1", "DroughtMaster", "0", "12105.3", "0.7"],
+          ["D2", "DroughtMaster", "25", "11256.7", "1.8"],
+          ["D3", "DroughtMaster", "50", "9876.4", "3.4"],
+          ["C1", "Control", "0", "11987.6", "0.9"],
+          ["C2", "Control", "25", "9654.3", "3.2"],
+          ["C3", "Control", "50", "6543.2", "6.5"]
+        ],
+        "totalRows": 45,
+        "truncated": true
+      }
+    },
+    {
+      "id": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8",
+      "name": "Rice Salinity Study",
+      "description": "Investigation of salt tolerance mechanisms in different rice cultivars.",
+      "status": "active",
+      "visibility": "private",
+      "embargoIntervalDays": 90,
+      "createdBy": "6b5c4d3e-2f1a-4b5c-8d9e-7f6g5h4i3j2",
+      "createdAt": "2025-05-01T08:45:00.000Z",
+      "updatedAt": "2025-05-20T13:10:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "sample_id",
+            "type_name": "string",
+            "type_text": "Sample identifier"
+          },
+          {
+            "name": "cultivar",
+            "type_name": "string",
+            "type_text": "Rice cultivar name"
+          },
+          {
+            "name": "salinity_mM",
+            "type_name": "int",
+            "type_text": "Salinity concentration in mM"
+          },
+          {
+            "name": "germination_rate",
+            "type_name": "float",
+            "type_text": "Germination percentage"
+          },
+          {
+            "name": "na_k_ratio",
+            "type_name": "float",
+            "type_text": "Sodium/Potassium ratio in tissues"
+          }
+        ],
+        "rows": [
+          ["S1-IR", "IR64", "0", "98.5", "0.05"],
+          ["S2-IR", "IR64", "50", "85.2", "0.12"],
+          ["S3-IR", "IR64", "100", "65.7", "0.28"],
+          ["S1-FL", "FL478", "0", "97.8", "0.04"],
+          ["S2-FL", "FL478", "50", "92.3", "0.08"],
+          ["S3-FL", "FL478", "100", "84.6", "0.15"],
+          ["S1-PK", "Pokkali", "0", "96.9", "0.04"],
+          ["S2-PK", "Pokkali", "50", "94.5", "0.06"],
+          ["S3-PK", "Pokkali", "100", "90.2", "0.09"]
+        ],
+        "totalRows": 54,
+        "truncated": true
+      }
+    },
+    {
+      "id": "4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9",
+      "name": "Wheat Nitrogen Utilization",
+      "description": "Study on nitrogen use efficiency in winter wheat varieties.",
+      "status": "stale",
+      "visibility": "private",
+      "embargoIntervalDays": 45,
+      "createdBy": "3e4f5g6h-7i8j-9k0l-1m2n-3o4p5q6r7s8",
+      "createdAt": "2024-11-15T10:30:00.000Z",
+      "updatedAt": "2025-01-10T09:20:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "field_id",
+            "type_name": "string",
+            "type_text": "Field identifier"
+          },
+          {
+            "name": "wheat_variety",
+            "type_name": "string",
+            "type_text": "Wheat variety"
+          },
+          {
+            "name": "n_application_kg_ha",
+            "type_name": "float",
+            "type_text": "Nitrogen application in kg/ha"
+          },
+          {
+            "name": "yield_t_ha",
+            "type_name": "float",
+            "type_text": "Yield in tonnes per hectare"
+          },
+          {
+            "name": "grain_protein",
+            "type_name": "float",
+            "type_text": "Grain protein percentage"
+          },
+          {
+            "name": "nue",
+            "type_name": "float",
+            "type_text": "Nitrogen use efficiency"
+          }
+        ],
+        "rows": [
+          ["F1", "Robigus", "0", "6.2", "9.8", "0"],
+          ["F2", "Robigus", "120", "9.5", "11.3", "27.5"],
+          ["F3", "Robigus", "240", "10.8", "13.5", "19.2"],
+          ["F4", "Cordiale", "0", "5.8", "10.2", "0"],
+          ["F5", "Cordiale", "120", "9.1", "12.1", "27.5"],
+          ["F6", "Cordiale", "240", "10.5", "14.2", "19.6"],
+          ["F7", "Hereward", "0", "5.5", "10.5", "0"],
+          ["F8", "Hereward", "120", "8.9", "13.2", "28.3"],
+          ["F9", "Hereward", "240", "10.3", "15.4", "20.0"]
+        ],
+        "totalRows": 36,
+        "truncated": true
+      }
+    },
+    {
+      "id": "5e6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0",
+      "name": "Tomato Disease Resistance",
+      "description": "Evaluation of disease resistance in heirloom tomato varieties under organic management.",
+      "status": "provisioning",
+      "visibility": "private",
+      "embargoIntervalDays": 60,
+      "createdBy": "9a8b7c6d-5e4f-3g2h-1i0j-9k8l7m6n5o4",
+      "createdAt": "2025-05-28T15:40:00.000Z",
+      "updatedAt": "2025-05-28T15:40:00.000Z",
+      "data": null
+    },
+    {
+      "id": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1",
+      "name": "Potato Variety Disease Resistance",
+      "description": "Field evaluation of disease-resistant potato varieties under various soil conditions",
+      "status": "active",
+      "visibility": "public",
+      "embargoIntervalDays": 45,
+      "createdBy": "7d8e9f0a-1b2c-3d4e-5f6g-7h8i9j0k1l2",
+      "createdAt": "2025-05-10T10:15:00.000Z",
+      "updatedAt": "2025-06-01T11:30:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "plot_id",
+            "type_name": "string",
+            "type_text": "Plot identifier"
+          },
+          {
+            "name": "variety",
+            "type_name": "string",
+            "type_text": "Potato variety"
+          },
+          {
+            "name": "soil_type",
+            "type_name": "string",
+            "type_text": "Soil type classification"
+          },
+          {
+            "name": "disease_score",
+            "type_name": "float",
+            "type_text": "Disease resistance score (1-10)"
+          },
+          {
+            "name": "yield_kg",
+            "type_name": "float",
+            "type_text": "Yield in kilograms per plot"
+          }
+        ],
+        "rows": [
+          ["P1", "Russet", "Sandy loam", "7.5", "18.2"],
+          ["P2", "Russet", "Clay", "6.8", "16.9"],
+          ["P3", "Russet", "Loamy sand", "8.2", "19.5"],
+          ["P4", "Yukon Gold", "Sandy loam", "6.5", "17.3"],
+          ["P5", "Yukon Gold", "Clay", "5.9", "15.8"],
+          ["P6", "Yukon Gold", "Loamy sand", "7.1", "18.4"],
+          ["P7", "Red Pontiac", "Sandy loam", "8.4", "20.1"],
+          ["P8", "Red Pontiac", "Clay", "7.8", "18.7"],
+          ["P9", "Red Pontiac", "Loamy sand", "8.9", "21.2"]
+        ],
+        "totalRows": 36,
+        "truncated": true
+      }
+    },
+    {
+      "id": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2",
+      "name": "Apple Tree Rootstock Influence",
+      "description": "Study on how different rootstocks affect apple tree growth, yield, and disease resistance",
+      "status": "active",
+      "visibility": "public",
+      "embargoIntervalDays": 60,
+      "createdBy": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+      "createdAt": "2025-04-20T09:30:00.000Z",
+      "updatedAt": "2025-05-25T16:20:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "tree_id",
+            "type_name": "string",
+            "type_text": "Tree identifier"
+          },
+          {
+            "name": "cultivar",
+            "type_name": "string",
+            "type_text": "Apple cultivar"
+          },
+          {
+            "name": "rootstock",
+            "type_name": "string",
+            "type_text": "Rootstock variety"
+          },
+          {
+            "name": "height_m",
+            "type_name": "float",
+            "type_text": "Tree height in meters"
+          },
+          {
+            "name": "yield_kg",
+            "type_name": "float",
+            "type_text": "Fruit yield in kilograms"
+          },
+          {
+            "name": "fire_blight_resistance",
+            "type_name": "int",
+            "type_text": "Fire blight resistance score (1-10)"
+          }
+        ],
+        "rows": [
+          ["T1", "Honeycrisp", "M9", "2.8", "42.5", "6"],
+          ["T2", "Honeycrisp", "M26", "3.4", "38.2", "5"],
+          ["T3", "Honeycrisp", "MM106", "4.1", "56.7", "7"],
+          ["T4", "Gala", "M9", "2.6", "45.3", "5"],
+          ["T5", "Gala", "M26", "3.2", "41.8", "4"],
+          ["T6", "Gala", "MM106", "3.9", "58.4", "6"],
+          ["T7", "Fuji", "M9", "2.7", "44.1", "5"],
+          ["T8", "Fuji", "M26", "3.3", "40.6", "4"],
+          ["T9", "Fuji", "MM106", "4.0", "59.9", "7"]
+        ],
+        "totalRows": 45,
+        "truncated": true
+      }
+    },
+    {
+      "id": "8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3",
+      "name": "Hemp Fiber Quality Analysis",
+      "description": "Investigation of fiber quality in industrial hemp varieties under different cultivation practices",
+      "status": "published",
+      "visibility": "public",
+      "embargoIntervalDays": 30,
+      "createdBy": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o7",
+      "createdAt": "2025-03-15T13:20:00.000Z",
+      "updatedAt": "2025-05-20T09:45:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "sample_id",
+            "type_name": "string",
+            "type_text": "Sample identifier"
+          },
+          {
+            "name": "variety",
+            "type_name": "string",
+            "type_text": "Hemp variety"
+          },
+          {
+            "name": "plant_spacing_cm",
+            "type_name": "int",
+            "type_text": "Plant spacing in centimeters"
+          },
+          {
+            "name": "fiber_length_cm",
+            "type_name": "float",
+            "type_text": "Fiber length in centimeters"
+          },
+          {
+            "name": "fiber_strength_mpa",
+            "type_name": "float",
+            "type_text": "Fiber tensile strength in MPa"
+          },
+          {
+            "name": "cellulose_content",
+            "type_name": "float",
+            "type_text": "Percentage of cellulose in fiber"
+          }
+        ],
+        "rows": [
+          ["H1", "Finola", "10", "5.8", "620.5", "72.3"],
+          ["H2", "Finola", "15", "6.2", "645.2", "73.8"],
+          ["H3", "Finola", "20", "5.4", "590.8", "70.9"],
+          ["H4", "Felina 32", "10", "6.5", "680.3", "75.2"],
+          ["H5", "Felina 32", "15", "6.9", "710.6", "76.7"],
+          ["H6", "Felina 32", "20", "6.1", "655.9", "74.1"],
+          ["H7", "Futura 75", "10", "7.1", "725.4", "77.5"],
+          ["H8", "Futura 75", "15", "7.5", "758.2", "79.0"],
+          ["H9", "Futura 75", "20", "6.8", "705.3", "76.2"]
+        ],
+        "totalRows": 54,
+        "truncated": true
+      }
+    },
+    {
+      "id": "9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4",
+      "name": "Sustainable Irrigation Systems Comparison",
+      "description": "Comparative analysis of water efficiency and crop yield between different sustainable irrigation systems",
+      "status": "active",
+      "visibility": "private",
+      "embargoIntervalDays": 90,
+      "createdBy": "8t9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3",
+      "createdAt": "2025-05-15T11:25:00.000Z",
+      "updatedAt": "2025-05-30T14:10:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "plot_id",
+            "type_name": "string",
+            "type_text": "Plot identifier"
+          },
+          {
+            "name": "crop_type",
+            "type_name": "string",
+            "type_text": "Type of crop"
+          },
+          {
+            "name": "irrigation_system",
+            "type_name": "string",
+            "type_text": "Type of irrigation system"
+          },
+          {
+            "name": "water_usage_liters",
+            "type_name": "float",
+            "type_text": "Water usage in liters"
+          },
+          {
+            "name": "yield_kg_m2",
+            "type_name": "float",
+            "type_text": "Crop yield in kg per square meter"
+          },
+          {
+            "name": "water_efficiency",
+            "type_name": "float",
+            "type_text": "Water use efficiency (kg yield per liter)"
+          }
+        ],
+        "rows": [
+          ["I1", "Tomato", "Drip irrigation", "2450.3", "5.8", "0.00237"],
+          ["I2", "Tomato", "Sprinkler", "3850.6", "5.4", "0.00140"],
+          ["I3", "Tomato", "Subsurface drip", "2150.8", "5.9", "0.00274"],
+          ["I4", "Cucumber", "Drip irrigation", "2750.5", "4.2", "0.00153"],
+          ["I5", "Cucumber", "Sprinkler", "4050.2", "3.9", "0.00096"],
+          ["I6", "Cucumber", "Subsurface drip", "2350.9", "4.4", "0.00187"],
+          ["I7", "Bell Pepper", "Drip irrigation", "2150.4", "3.6", "0.00167"],
+          ["I8", "Bell Pepper", "Sprinkler", "3350.7", "3.2", "0.00095"],
+          ["I9", "Bell Pepper", "Subsurface drip", "1850.1", "3.8", "0.00205"]
+        ],
+        "totalRows": 27,
+        "truncated": true
+      }
+    },
+    {
+      "id": "a0b1c2d3-e4f5-6g7h-8i9j-0k1l2m3n4o5p",
+      "name": "Quinoa Protein Content Study",
+      "description": "Analysis of protein content and amino acid profiles in quinoa varieties grown under different nitrogen conditions",
+      "status": "active",
+      "visibility": "public",
+      "embargoIntervalDays": 45,
+      "createdBy": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "createdAt": "2025-02-18T09:15:00.000Z",
+      "updatedAt": "2025-05-25T16:30:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "sample_id",
+            "type_name": "string",
+            "type_text": "Sample identifier"
+          },
+          {
+            "name": "variety",
+            "type_name": "string",
+            "type_text": "Quinoa variety"
+          },
+          {
+            "name": "nitrogen_level",
+            "type_name": "int",
+            "type_text": "Nitrogen application rate in kg/ha"
+          },
+          {
+            "name": "protein_content",
+            "type_name": "float",
+            "type_text": "Protein content percentage"
+          },
+          {
+            "name": "lysine_mg_g",
+            "type_name": "float",
+            "type_text": "Lysine content in mg/g"
+          },
+          {
+            "name": "methionine_mg_g",
+            "type_name": "float",
+            "type_text": "Methionine content in mg/g"
+          }
+        ],
+        "rows": [
+          ["Q1", "Rainbow", "0", "14.2", "6.8", "2.3"],
+          ["Q2", "Rainbow", "50", "16.5", "7.9", "2.7"],
+          ["Q3", "Rainbow", "100", "18.1", "8.6", "2.9"],
+          ["Q4", "Red Head", "0", "13.8", "6.5", "2.1"],
+          ["Q5", "Red Head", "50", "15.9", "7.6", "2.5"],
+          ["Q6", "Red Head", "100", "17.7", "8.3", "2.8"],
+          ["Q7", "Temuco", "0", "15.1", "7.2", "2.4"],
+          ["Q8", "Temuco", "50", "17.3", "8.1", "2.8"],
+          ["Q9", "Temuco", "100", "19.2", "8.9", "3.1"]
+        ],
+        "totalRows": 72,
+        "truncated": true
+      }
+    },
+    {
+      "id": "b1c2d3e4-f5g6-7h8i-9j0k-1l2m3n4o5p6q",
+      "name": "Vertical Farming LED Spectrum Analysis",
+      "description": "Investigation of different LED light spectra on lettuce growth and nutritional content in vertical farming systems",
+      "status": "published",
+      "visibility": "public",
+      "embargoIntervalDays": 30,
+      "createdBy": "b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q",
+      "createdAt": "2025-01-12T14:20:00.000Z",
+      "updatedAt": "2025-04-18T10:45:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "tray_id",
+            "type_name": "string",
+            "type_text": "Growing tray identifier"
+          },
+          {
+            "name": "led_spectrum",
+            "type_name": "string",
+            "type_text": "LED light spectrum configuration"
+          },
+          {
+            "name": "lettuce_variety",
+            "type_name": "string",
+            "type_text": "Lettuce variety"
+          },
+          {
+            "name": "fresh_weight_g",
+            "type_name": "float",
+            "type_text": "Fresh weight in grams"
+          },
+          {
+            "name": "vitamin_c_mg",
+            "type_name": "float",
+            "type_text": "Vitamin C content in mg per 100g"
+          },
+          {
+            "name": "nitrate_ppm",
+            "type_name": "float",
+            "type_text": "Nitrate content in ppm"
+          }
+        ],
+        "rows": [
+          ["L1", "Red+Blue", "Butterhead", "125.3", "15.8", "850.2"],
+          ["L2", "Red+Blue", "Romaine", "142.7", "18.9", "920.5"],
+          ["L3", "Red+Blue+White", "Butterhead", "138.9", "17.2", "780.6"],
+          ["L4", "Red+Blue+White", "Romaine", "156.4", "21.3", "835.8"],
+          ["L5", "Full Spectrum", "Butterhead", "145.2", "19.1", "745.3"],
+          ["L6", "Full Spectrum", "Romaine", "168.8", "23.7", "792.1"],
+          ["L7", "Red+Blue+Far Red", "Butterhead", "152.6", "18.4", "710.9"],
+          ["L8", "Red+Blue+Far Red", "Romaine", "174.3", "22.8", "758.4"],
+          ["L9", "White Only", "Butterhead", "118.7", "14.2", "945.7"]
+        ],
+        "totalRows": 54,
+        "truncated": true
+      }
+    },
+    {
+      "id": "c2d3e4f5-g6h7-8i9j-0k1l-2m3n4o5p6q7r",
+      "name": "Coffee Bean Quality Under Climate Stress",
+      "description": "Evaluation of arabica coffee bean quality parameters under simulated climate change conditions",
+      "status": "active",
+      "visibility": "private",
+      "embargoIntervalDays": 120,
+      "createdBy": "c3d4e5f6-g7h8-9i0j-1k2l-3m4n5o6p7q8r",
+      "createdAt": "2025-03-28T11:30:00.000Z",
+      "updatedAt": "2025-05-31T14:25:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "plant_id",
+            "type_name": "string",
+            "type_text": "Coffee plant identifier"
+          },
+          {
+            "name": "temperature_c",
+            "type_name": "float",
+            "type_text": "Average temperature in Celsius"
+          },
+          {
+            "name": "co2_ppm",
+            "type_name": "int",
+            "type_text": "CO2 concentration in ppm"
+          },
+          {
+            "name": "caffeine_percent",
+            "type_name": "float",
+            "type_text": "Caffeine content percentage"
+          },
+          {
+            "name": "chlorogenic_acid",
+            "type_name": "float",
+            "type_text": "Chlorogenic acid content in mg/g"
+          },
+          {
+            "name": "cup_score",
+            "type_name": "float",
+            "type_text": "Cupping quality score (0-100)"
+          }
+        ],
+        "rows": [
+          ["C1", "22.5", "400", "1.24", "45.8", "84.5"],
+          ["C2", "24.8", "450", "1.31", "42.3", "82.1"],
+          ["C3", "27.2", "500", "1.38", "38.9", "79.7"],
+          ["C4", "22.5", "450", "1.26", "44.1", "83.8"],
+          ["C5", "24.8", "500", "1.33", "40.7", "81.4"],
+          ["C6", "27.2", "400", "1.35", "41.2", "80.9"],
+          ["C7", "22.5", "500", "1.28", "43.5", "83.2"],
+          ["C8", "24.8", "400", "1.29", "43.9", "83.6"],
+          ["C9", "27.2", "450", "1.36", "39.8", "80.3"]
+        ],
+        "totalRows": 45,
+        "truncated": true
+      }
+    },
+    {
+      "id": "d3e4f5g6-h7i8-9j0k-1l2m-3n4o5p6q7r8s",
+      "name": "Mycorrhizal Fungi Impact on Crop Yields",
+      "description": "Study of arbuscular mycorrhizal fungi associations on vegetable crop yields and soil health improvement",
+      "status": "published",
+      "visibility": "public",
+      "embargoIntervalDays": 60,
+      "createdBy": "d4e5f6g7-h8i9-0j1k-2l3m-4n5o6p7q8r9s",
+      "createdAt": "2024-12-05T08:45:00.000Z",
+      "updatedAt": "2025-03-20T16:15:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "plot_id",
+            "type_name": "string",
+            "type_text": "Experimental plot identifier"
+          },
+          {
+            "name": "crop_species",
+            "type_name": "string",
+            "type_text": "Crop species"
+          },
+          {
+            "name": "mycorrhizal_treatment",
+            "type_name": "string",
+            "type_text": "Mycorrhizal inoculation treatment"
+          },
+          {
+            "name": "yield_kg_m2",
+            "type_name": "float",
+            "type_text": "Yield in kg per square meter"
+          },
+          {
+            "name": "root_colonization",
+            "type_name": "float",
+            "type_text": "Mycorrhizal root colonization percentage"
+          },
+          {
+            "name": "soil_phosphorus",
+            "type_name": "float",
+            "type_text": "Available soil phosphorus in mg/kg"
+          }
+        ],
+        "rows": [
+          ["M1", "Tomato", "Control", "4.2", "8.5", "15.3"],
+          ["M2", "Tomato", "Glomus intraradices", "5.8", "65.2", "22.7"],
+          ["M3", "Tomato", "Mixed inoculum", "6.1", "72.4", "24.9"],
+          ["M4", "Pepper", "Control", "3.1", "12.3", "14.8"],
+          ["M5", "Pepper", "Glomus intraradices", "4.5", "58.7", "20.1"],
+          ["M6", "Pepper", "Mixed inoculum", "4.8", "68.9", "23.4"],
+          ["M7", "Eggplant", "Control", "2.8", "9.1", "16.2"],
+          ["M8", "Eggplant", "Glomus intraradices", "4.2", "61.5", "21.8"],
+          ["M9", "Eggplant", "Mixed inoculum", "4.6", "69.7", "25.1"]
+        ],
+        "totalRows": 81,
+        "truncated": true
+      }
+    },
+    {
+      "id": "e4f5g6h7-i8j9-0k1l-2m3n-4o5p6q7r8s9t",
+      "name": "Precision Agriculture Sensor Network",
+      "description": "Implementation and evaluation of IoT sensor networks for real-time crop monitoring and precision agriculture",
+      "status": "active",
+      "visibility": "public",
+      "embargoIntervalDays": 30,
+      "createdBy": "e5f6g7h8-i9j0-1k2l-3m4n-5o6p7q8r9s0t",
+      "createdAt": "2025-04-10T13:20:00.000Z",
+      "updatedAt": "2025-06-01T09:45:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "sensor_id",
+            "type_name": "string",
+            "type_text": "Sensor node identifier"
+          },
+          {
+            "name": "field_zone",
+            "type_name": "string",
+            "type_text": "Field management zone"
+          },
+          {
+            "name": "soil_moisture",
+            "type_name": "float",
+            "type_text": "Soil moisture percentage"
+          },
+          {
+            "name": "soil_temperature",
+            "type_name": "float",
+            "type_text": "Soil temperature in Celsius"
+          },
+          {
+            "name": "ndvi",
+            "type_name": "float",
+            "type_text": "Normalized Difference Vegetation Index"
+          },
+          {
+            "name": "pest_alert_count",
+            "type_name": "int",
+            "type_text": "Number of pest detection alerts"
+          }
+        ],
+        "rows": [
+          ["S001", "Zone A", "28.5", "19.2", "0.78", "2"],
+          ["S002", "Zone A", "31.2", "20.1", "0.82", "1"],
+          ["S003", "Zone B", "25.8", "18.7", "0.65", "4"],
+          ["S004", "Zone B", "29.3", "19.8", "0.71", "3"],
+          ["S005", "Zone C", "33.1", "21.4", "0.85", "0"],
+          ["S006", "Zone C", "30.7", "20.9", "0.79", "1"],
+          ["S007", "Zone D", "26.9", "18.3", "0.68", "5"],
+          ["S008", "Zone D", "24.2", "17.8", "0.61", "6"],
+          ["S009", "Zone E", "32.4", "21.1", "0.83", "1"]
+        ],
+        "totalRows": 150,
+        "truncated": true
+      }
+    },
+    {
+      "id": "f5g6h7i8-j9k0-1l2m-3n4o-5p6q7r8s9t0u",
+      "name": "Organic Pest Control Effectiveness",
+      "description": "Comparative study of organic pest control methods versus conventional approaches in vegetable production",
+      "status": "provisioning",
+      "visibility": "private",
+      "embargoIntervalDays": 75,
+      "createdBy": "f6g7h8i9-j0k1-2l3m-4n5o-6p7q8r9s0t1u",
+      "createdAt": "2025-05-29T16:35:00.000Z",
+      "updatedAt": "2025-05-29T16:35:00.000Z",
+      "data": null
+    },
+    {
+      "id": "g6h7i8j9-k0l1-2m3n-4o5p-6q7r8s9t0u1v",
+      "name": "Hydroponic Nutrient Optimization",
+      "description": "Optimization of nutrient solutions for maximum yield and quality in hydroponic tomato production",
+      "status": "active",
+      "visibility": "public",
+      "embargoIntervalDays": 45,
+      "createdBy": "g7h8i9j0-k1l2-3m4n-5o6p-7q8r9s0t1u2v",
+      "createdAt": "2025-03-15T10:25:00.000Z",
+      "updatedAt": "2025-05-28T15:40:00.000Z",
+      "data": {
+        "columns": [
+          {
+            "name": "treatment_id",
+            "type_name": "string",
+            "type_text": "Treatment identifier"
+          },
+          {
+            "name": "ec_level",
+            "type_name": "float",
+            "type_text": "Electrical conductivity in mS/cm"
+          },
+          {
+            "name": "ph_level",
+            "type_name": "float",
+            "type_text": "pH level"
+          },
+          {
+            "name": "fruit_weight_g",
+            "type_name": "float",
+            "type_text": "Average fruit weight in grams"
+          },
+          {
+            "name": "brix_sugar",
+            "type_name": "float",
+            "type_text": "Sugar content in degrees Brix"
+          },
+          {
+            "name": "lycopene_mg",
+            "type_name": "float",
+            "type_text": "Lycopene content in mg per 100g"
+          }
+        ],
+        "rows": [
+          ["T1", "1.8", "5.8", "185.4", "4.2", "8.7"],
+          ["T2", "2.2", "6.0", "198.7", "4.8", "9.3"],
+          ["T3", "2.6", "6.2", "205.1", "5.1", "10.1"],
+          ["T4", "1.8", "6.0", "182.9", "4.1", "8.4"],
+          ["T5", "2.2", "6.2", "201.3", "4.9", "9.6"],
+          ["T6", "2.6", "5.8", "203.8", "5.0", "9.8"],
+          ["T7", "1.8", "6.2", "179.6", "4.0", "8.2"],
+          ["T8", "2.2", "5.8", "195.2", "4.7", "9.1"],
+          ["T9", "2.6", "6.0", "209.4", "5.3", "10.4"]
+        ],
+        "totalRows": 108,
+        "truncated": true
+      }
+    }
+  ],
+  "experimentMembers": [
+    {
+      "experimentId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+      "userId": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+      "role": "admin",
+      "joinedAt": "2025-04-10T09:00:00.000Z"
+    },
+    {
+      "experimentId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+      "userId": "6b5c4d3e-2f1a-4b5c-8d9e-7f6g5h4i3j2",
+      "role": "member",
+      "joinedAt": "2025-04-12T10:15:00.000Z"
+    },
+    {
+      "experimentId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+      "userId": "2c3d4e5f-6g7h-8i9j-0k1l-2m3n4o5p6q7",
+      "role": "member",
+      "joinedAt": "2025-04-15T14:30:00.000Z"
+    },
+    {
+      "experimentId": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7",
+      "userId": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+      "role": "admin",
+      "joinedAt": "2025-03-05T11:20:00.000Z"
+    },
+    {
+      "experimentId": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7",
+      "userId": "3e4f5g6h-7i8j-9k0l-1m2n-3o4p5q6r7s8",
+      "role": "member",
+      "joinedAt": "2025-03-10T09:45:00.000Z"
+    },
+    {
+      "experimentId": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8",
+      "userId": "6b5c4d3e-2f1a-4b5c-8d9e-7f6g5h4i3j2",
+      "role": "admin",
+      "joinedAt": "2025-05-01T08:45:00.000Z"
+    },
+    {
+      "experimentId": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8",
+      "userId": "9a8b7c6d-5e4f-3g2h-1i0j-9k8l7m6n5o4",
+      "role": "member",
+      "joinedAt": "2025-05-05T13:20:00.000Z"
+    },
+    {
+      "experimentId": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8",
+      "userId": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+      "role": "member",
+      "joinedAt": "2025-05-10T10:30:00.000Z"
+    },
+    {
+      "experimentId": "4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9",
+      "userId": "3e4f5g6h-7i8j-9k0l-1m2n-3o4p5q6r7s8",
+      "role": "admin",
+      "joinedAt": "2024-11-15T10:30:00.000Z"
+    },
+    {
+      "experimentId": "5e6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0",
+      "userId": "9a8b7c6d-5e4f-3g2h-1i0j-9k8l7m6n5o4",
+      "role": "admin",
+      "joinedAt": "2025-05-28T15:40:00.000Z"
+    },
+    {
+      "experimentId": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1",
+      "userId": "7d8e9f0a-1b2c-3d4e-5f6g-7h8i9j0k1l2",
+      "role": "admin",
+      "joinedAt": "2025-05-10T10:15:00.000Z"
+    },
+    {
+      "experimentId": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1",
+      "userId": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+      "role": "member",
+      "joinedAt": "2025-05-12T09:20:00.000Z"
+    },
+    {
+      "experimentId": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1",
+      "userId": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+      "role": "member",
+      "joinedAt": "2025-05-15T14:10:00.000Z"
+    },
+    {
+      "experimentId": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2",
+      "userId": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+      "role": "admin",
+      "joinedAt": "2025-04-20T09:30:00.000Z"
+    },
+    {
+      "experimentId": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2",
+      "userId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o7",
+      "role": "member",
+      "joinedAt": "2025-04-22T11:45:00.000Z"
+    },
+    {
+      "experimentId": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2",
+      "userId": "6b5c4d3e-2f1a-4b5c-8d9e-7f6g5h4i3j2",
+      "role": "member",
+      "joinedAt": "2025-04-25T13:30:00.000Z"
+    },
+    {
+      "experimentId": "8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3",
+      "userId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o7",
+      "role": "admin",
+      "joinedAt": "2025-03-15T13:20:00.000Z"
+    },
+    {
+      "experimentId": "8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3",
+      "userId": "7d8e9f0a-1b2c-3d4e-5f6g-7h8i9j0k1l2",
+      "role": "member",
+      "joinedAt": "2025-03-18T10:25:00.000Z"
+    },
+    {
+      "experimentId": "8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3",
+      "userId": "2c3d4e5f-6g7h-8i9j-0k1l-2m3n4o5p6q7",
+      "role": "member",
+      "joinedAt": "2025-03-22T14:15:00.000Z"
+    },
+    {
+      "experimentId": "9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4",
+      "userId": "8t9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3",
+      "role": "admin",
+      "joinedAt": "2025-05-15T11:25:00.000Z"
+    },
+    {
+      "experimentId": "9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4",
+      "userId": "5i6j7k8l-9m0n-1o2p-3q4r-5s6t7u8v9w0",
+      "role": "member",
+      "joinedAt": "2025-05-20T09:40:00.000Z"
+    },
+    {
+      "experimentId": "9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4",
+      "userId": "9a8b7c6d-5e4f-3g2h-1i0j-9k8l7m6n5o4",
+      "role": "member",
+      "joinedAt": "2025-05-25T15:35:00.000Z"
+    },
+    {
+      "experimentId": "a0b1c2d3-e4f5-6g7h-8i9j-0k1l2m3n4o5p",
+      "userId": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "role": "admin",
+      "joinedAt": "2025-02-18T09:15:00.000Z"
+    },
+    {
+      "experimentId": "a0b1c2d3-e4f5-6g7h-8i9j-0k1l2m3n4o5p",
+      "userId": "b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q",
+      "role": "member",
+      "joinedAt": "2025-02-22T14:20:00.000Z"
+    },
+    {
+      "experimentId": "a0b1c2d3-e4f5-6g7h-8i9j-0k1l2m3n4o5p",
+      "userId": "c3d4e5f6-g7h8-9i0j-1k2l-3m4n5o6p7q8r",
+      "role": "member",
+      "joinedAt": "2025-03-01T11:30:00.000Z"
+    },
+    {
+      "experimentId": "a0b1c2d3-e4f5-6g7h-8i9j-0k1l2m3n4o5p",
+      "userId": "d4e5f6g7-h8i9-0j1k-2l3m-4n5o6p7q8r9s",
+      "role": "member",
+      "joinedAt": "2025-03-15T09:45:00.000Z"
+    },
+    {
+      "experimentId": "b1c2d3e4-f5g6-7h8i-9j0k-1l2m3n4o5p6q",
+      "userId": "b2c3d4e5-f6g7-8h9i-0j1k-2l3m4n5o6p7q",
+      "role": "admin",
+      "joinedAt": "2025-01-12T14:20:00.000Z"
+    },
+    {
+      "experimentId": "b1c2d3e4-f5g6-7h8i-9j0k-1l2m3n4o5p6q",
+      "userId": "e5f6g7h8-i9j0-1k2l-3m4n-5o6p7q8r9s0t",
+      "role": "member",
+      "joinedAt": "2025-01-18T10:15:00.000Z"
+    },
+    {
+      "experimentId": "b1c2d3e4-f5g6-7h8i-9j0k-1l2m3n4o5p6q",
+      "userId": "f6g7h8i9-j0k1-2l3m-4n5o-6p7q8r9s0t1u",
+      "role": "member",
+      "joinedAt": "2025-01-25T13:40:00.000Z"
+    },
+    {
+      "experimentId": "c2d3e4f5-g6h7-8i9j-0k1l-2m3n4o5p6q7r",
+      "userId": "c3d4e5f6-g7h8-9i0j-1k2l-3m4n5o6p7q8r",
+      "role": "admin",
+      "joinedAt": "2025-03-28T11:30:00.000Z"
+    },
+    {
+      "experimentId": "c2d3e4f5-g6h7-8i9j-0k1l-2m3n4o5p6q7r",
+      "userId": "g7h8i9j0-k1l2-3m4n-5o6p-7q8r9s0t1u2v",
+      "role": "member",
+      "joinedAt": "2025-04-02T08:15:00.000Z"
+    },
+    {
+      "experimentId": "c2d3e4f5-g6h7-8i9j-0k1l-2m3n4o5p6q7r",
+      "userId": "h8i9j0k1-l2m3-4n5o-6p7q-8r9s0t1u2v3w",
+      "role": "member",
+      "joinedAt": "2025-04-10T15:25:00.000Z"
+    },
+    {
+      "experimentId": "d3e4f5g6-h7i8-9j0k-1l2m-3n4o5p6q7r8s",
+      "userId": "d4e5f6g7-h8i9-0j1k-2l3m-4n5o6p7q8r9s",
+      "role": "admin",
+      "joinedAt": "2024-12-05T08:45:00.000Z"
+    },
+    {
+      "experimentId": "d3e4f5g6-h7i8-9j0k-1l2m-3n4o5p6q7r8s",
+      "userId": "i9j0k1l2-m3n4-5o6p-7q8r-9s0t1u2v3w4x",
+      "role": "member",
+      "joinedAt": "2024-12-12T14:30:00.000Z"
+    },
+    {
+      "experimentId": "d3e4f5g6-h7i8-9j0k-1l2m-3n4o5p6q7r8s",
+      "userId": "j0k1l2m3-n4o5-6p7q-8r9s-0t1u2v3w4x5y",
+      "role": "member",
+      "joinedAt": "2024-12-18T11:20:00.000Z"
+    },
+    {
+      "experimentId": "d3e4f5g6-h7i8-9j0k-1l2m-3n4o5p6q7r8s",
+      "userId": "a1b2c3d4-e5f6-7g8h-9i0j-1k2l3m4n5o6p",
+      "role": "member",
+      "joinedAt": "2025-01-05T09:15:00.000Z"
+    },
+    {
+      "experimentId": "e4f5g6h7-i8j9-0k1l-2m3n-4o5p6q7r8s9t",
+      "userId": "e5f6g7h8-i9j0-1k2l-3m4n-5o6p7q8r9s0t",
+      "role": "admin",
+      "joinedAt": "2025-04-10T13:20:00.000Z"
+    },
+    {
+      "experimentId": "e4f5g6h7-i8j9-0k1l-2m3n-4o5p6q7r8s9t",
+      "userId": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+      "role": "member",
+      "joinedAt": "2025-04-15T16:40:00.000Z"
+    },
+    {
+      "experimentId": "e4f5g6h7-i8j9-0k1l-2m3n-4o5p6q7r8s9t",
+      "userId": "7d8e9f0a-1b2c-3d4e-5f6g-7h8i9j0k1l2",
+      "role": "member",
+      "joinedAt": "2025-04-20T12:10:00.000Z"
+    },
+    {
+      "experimentId": "e4f5g6h7-i8j9-0k1l-2m3n-4o5p6q7r8s9t",
+      "userId": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+      "role": "member",
+      "joinedAt": "2025-04-25T10:35:00.000Z"
+    },
+    {
+      "experimentId": "f5g6h7i8-j9k0-1l2m-3n4o-5p6q7r8s9t0u",
+      "userId": "f6g7h8i9-j0k1-2l3m-4n5o-6p7q8r9s0t1u",
+      "role": "admin",
+      "joinedAt": "2025-05-29T16:35:00.000Z"
+    },
+    {
+      "experimentId": "g6h7i8j9-k0l1-2m3n-4o5p-6q7r8s9t0u1v",
+      "userId": "g7h8i9j0-k1l2-3m4n-5o6p-7q8r9s0t1u2v",
+      "role": "admin",
+      "joinedAt": "2025-03-15T10:25:00.000Z"
+    },
+    {
+      "experimentId": "g6h7i8j9-k0l1-2m3n-4o5p-6q7r8s9t0u1v",
+      "userId": "8t9u0v1w-2x3y-4z5a-6b7c-8d9e0f1g2h3",
+      "role": "member",
+      "joinedAt": "2025-03-20T14:15:00.000Z"
+    },
+    {
+      "experimentId": "g6h7i8j9-k0l1-2m3n-4o5p-6q7r8s9t0u1v",
+      "userId": "5i6j7k8l-9m0n-1o2p-3q4r-5s6t7u8v9w0",
+      "role": "member",
+      "joinedAt": "2025-03-25T11:50:00.000Z"
+    },
+    {
+      "experimentId": "g6h7i8j9-k0l1-2m3n-4o5p-6q7r8s9t0u1v",
+      "userId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o7",
+      "role": "member",
+      "joinedAt": "2025-04-01T09:30:00.000Z"
+    }
+  ],
+  "apiExamples": {
+    "experiments": {
+      "create": {
+        "request": {
+          "name": "New Potato Variety Trial",
+          "description": "Field evaluation of disease-resistant potato varieties",
+          "visibility": "public",
+          "embargoIntervalDays": 45
+        },
+        "response": {
+          "id": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1"
+        }
+      },
+      "list": {
+        "request": {
+          "filter": "my",
+          "status": "active"
+        },
+        "response": [
+          {
+            "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+            "name": "Soybean Growth Analysis",
+            "description": "Field experiment analyzing growth patterns of different soybean varieties under varying irrigation conditions.",
+            "status": "active",
+            "visibility": "public",
+            "embargoIntervalDays": 30,
+            "createdBy": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+            "createdAt": "2025-04-10T09:00:00.000Z",
+            "updatedAt": "2025-05-15T14:30:00.000Z"
+          },
+          {
+            "id": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1",
+            "name": "Potato Variety Disease Resistance",
+            "description": "Field evaluation of disease-resistant potato varieties under various soil conditions",
+            "status": "active",
+            "visibility": "public",
+            "embargoIntervalDays": 45,
+            "createdBy": "7d8e9f0a-1b2c-3d4e-5f6g-7h8i9j0k1l2",
+            "createdAt": "2025-05-10T10:15:00.000Z",
+            "updatedAt": "2025-06-01T11:30:00.000Z"
+          },
+          {
+            "id": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2",
+            "name": "Apple Tree Rootstock Influence",
+            "description": "Study on how different rootstocks affect apple tree growth, yield, and disease resistance",
+            "status": "active",
+            "visibility": "public",
+            "embargoIntervalDays": 60,
+            "createdBy": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+            "createdAt": "2025-04-20T09:30:00.000Z",
+            "updatedAt": "2025-05-25T16:20:00.000Z"
+          }
+        ]
+      },
+      "get": {
+        "request": {
+          "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6"
+        },
+        "response": {
+          "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+          "name": "Soybean Growth Analysis",
+          "description": "Field experiment analyzing growth patterns of different soybean varieties under varying irrigation conditions.",
+          "status": "active",
+          "visibility": "public",
+          "embargoIntervalDays": 30,
+          "createdBy": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+          "createdAt": "2025-04-10T09:00:00.000Z",
+          "updatedAt": "2025-05-15T14:30:00.000Z",
+          "data": {
+            "columns": [
+              {
+                "name": "plot_id",
+                "type_name": "string",
+                "type_text": "Plot identifier"
+              },
+              {
+                "name": "variety",
+                "type_name": "string",
+                "type_text": "Soybean variety"
+              },
+              {
+                "name": "irrigation_level",
+                "type_name": "int",
+                "type_text": "Irrigation level in mm/day"
+              },
+              {
+                "name": "height_cm",
+                "type_name": "float",
+                "type_text": "Plant height in centimeters"
+              },
+              {
+                "name": "leaf_count",
+                "type_name": "int",
+                "type_text": "Number of leaves per plant"
+              },
+              {
+                "name": "measurement_date",
+                "type_name": "datetime",
+                "type_text": "Date and time of measurement"
+              }
+            ],
+            "rows": [
+              [
+                "A1",
+                "Williams82",
+                "10",
+                "45.3",
+                "24",
+                "2025-04-15T10:00:00.000Z"
+              ],
+              [
+                "A2",
+                "Williams82",
+                "20",
+                "52.1",
+                "28",
+                "2025-04-15T10:15:00.000Z"
+              ],
+              [
+                "A3",
+                "Williams82",
+                "30",
+                "58.7",
+                "32",
+                "2025-04-15T10:30:00.000Z"
+              ],
+              ["B1", "Jack", "10", "42.8", "22", "2025-04-15T11:00:00.000Z"],
+              ["B2", "Jack", "20", "50.2", "26", "2025-04-15T11:15:00.000Z"],
+              ["B3", "Jack", "30", "55.9", "30", "2025-04-15T11:30:00.000Z"],
+              [
+                "C1",
+                "LD00-3309",
+                "10",
+                "47.5",
+                "25",
+                "2025-04-15T12:00:00.000Z"
+              ],
+              [
+                "C2",
+                "LD00-3309",
+                "20",
+                "54.3",
+                "29",
+                "2025-04-15T12:15:00.000Z"
+              ],
+              [
+                "C3",
+                "LD00-3309",
+                "30",
+                "60.1",
+                "33",
+                "2025-04-15T12:30:00.000Z"
+              ]
+            ],
+            "totalRows": 108,
+            "truncated": true
+          }
+        }
+      },
+      "update": {
+        "request": {
+          "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+          "name": "Updated Soybean Growth Analysis",
+          "description": "Updated description with additional experimental details",
+          "visibility": "private"
+        },
+        "response": {
+          "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+          "name": "Updated Soybean Growth Analysis",
+          "description": "Updated description with additional experimental details",
+          "status": "active",
+          "visibility": "private",
+          "embargoIntervalDays": 30,
+          "createdBy": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+          "createdAt": "2025-04-10T09:00:00.000Z",
+          "updatedAt": "2025-06-02T10:20:00.000Z"
+        }
+      },
+      "delete": {
+        "request": {
+          "id": "5e6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0"
+        },
+        "response": null
+      }
+    },
+    "experimentMembers": {
+      "list": {
+        "request": {
+          "id": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2"
+        },
+        "response": [
+          {
+            "userId": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+            "role": "admin",
+            "joinedAt": "2025-04-20T09:30:00.000Z"
+          },
+          {
+            "userId": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o7",
+            "role": "member",
+            "joinedAt": "2025-04-22T11:45:00.000Z"
+          },
+          {
+            "userId": "6b5c4d3e-2f1a-4b5c-8d9e-7f6g5h4i3j2",
+            "role": "member",
+            "joinedAt": "2025-04-25T13:30:00.000Z"
+          }
+        ]
+      },
+      "add": {
+        "request": {
+          "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+          "userId": "3e4f5g6h-7i8j-9k0l-1m2n-3o4p5q6r7s8",
+          "role": "member"
+        },
+        "response": {
+          "userId": "3e4f5g6h-7i8j-9k0l-1m2n-3o4p5q6r7s8",
+          "role": "member",
+          "joinedAt": "2025-06-02T15:45:00.000Z"
+        }
+      },
+      "remove": {
+        "request": {
+          "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6",
+          "memberId": "2c3d4e5f-6g7h-8i9j-0k1l-2m3n4o5p6q7"
+        },
+        "response": null
+      }
+    },
+    "users": {
+      "search": {
+        "request": {
+          "query": "an",
+          "limit": 10,
+          "offset": 0
+        },
+        "response": [
+          {
+            "id": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+            "name": "Alex Johnson",
+            "email": "alex.johnson@example.com"
+          },
+          {
+            "id": "7d8e9f0a-1b2c-3d4e-5f6g-7h8i9j0k1l2",
+            "name": "Jordan Smith",
+            "email": "jordan.smith@example.com"
+          },
+          {
+            "id": "4f5g6h7i-8j9k-0l1m-2n3o-4p5q6r7s8t9",
+            "name": "Taylor Nguyen",
+            "email": "taylor.nguyen@example.com"
+          }
+        ]
+      },
+      "get": {
+        "request": {
+          "id": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6"
+        },
+        "response": {
+          "id": "8d7f9e1a-0c5d-4a5f-9e9e-a1b2c3d4e5f6",
+          "name": "Alex Johnson",
+          "email": "alex.johnson@example.com",
+          "createdAt": "2025-01-15T08:30:00.000Z",
+          "updatedAt": "2025-01-15T08:30:00.000Z"
+        }
+      }
+    }
+  }
+}
