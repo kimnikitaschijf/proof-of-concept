@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body,
@@ -10,7 +11,7 @@ html {
     height: 100%;
     margin: 0;
     background-color: var(--background-color);
-    font-family: var(--font);
+    font-family: var(--header-font);
     view-transition-name: default;
 }
 
@@ -18,7 +19,6 @@ main {
     margin: 0 auto;
     min-height: 100vh;
     padding-bottom: 50px;
-    /* transition: margin-top 0.2s ease-in-out; */
 }
 
 a {
@@ -26,18 +26,46 @@ a {
 }
 
 :root {
-    --header-font: "poppins", sans-serif;
+    --header-font: "Poppins", sans-serif;
     --body-font: "Overpass", sans-serif;
 
-    --font-size-xs: 0.75rem;
-    --font-size-s: 1rem;
+    /* Font sizes */
+    --font-size-huge: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);
+    /* ~28–40px */
+    --font-size-large: clamp(1.5rem, 2.5vw + 0.25rem, 2rem);
+    /* ~24–32px */
+    --font-size-medium: clamp(1.25rem, 2vw + 0.25rem, 1.75rem);
+    /* ~20–28px */
+    --font-size-normal: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
+    /* ~16–20px */
+    --font-size-small: clamp(1rem, 1vw + 0.25rem, 1.125rem);
+    /* ~16–18px */
+    --font-size-xsmall: clamp(1rem, 0.75vw + 0.25rem, 1rem);
+    /* ~16px vast */
+    --font-size-menu: var(--font-size-xsmall);
 
+    /* Line heights */
+    --line-height-huge: 1.2;
+    --line-height-large: 1.4;
+    --line-height-medium: 1.6;
+    --line-height-normal: 1.8;
+    --line-height-small: 1.4;
+
+    /* Spacing */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --spacing-huge: 3rem;
+
+    /* Border radius */
     --border-radius-tile: 2px;
     --border-radius-button: 4px;
 
+    /* Padding */
     --padding-button: 8px 16px;
     --padding-tile: 8px 10px;
 
+    /* Colors */
     --text-color: #161616;
     --alt-text-color: #ffffff;
     --primary-color: #005e5e;
@@ -53,7 +81,7 @@ button {
     cursor: pointer;
 }
 
-/*      MARK: 404     */
+/* MARK: 404 */
 .h1404 {
     font-size: var(--font-size-6xl);
     justify-self: center;
