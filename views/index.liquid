@@ -2,19 +2,28 @@
 
 <main>
 
-    <h1>Experiments</h1>
+    <h1 class="main-title">All experiments</h1>
 
-    <ul>
+    <p class="experiment-count">
+        {{ experiments.size }} experiments found
+    </p>
+
+    <section class="experiments-grid">
         {% for experiment in experiments %}
-        <li>
-            <h2>{{ experiment.name }}</h2>
-            <p>{{ experiment.description }}</p>
-            <p>Status: {{ experiment.status }}</p>
-            <p>Aangemaakt op: {{ experiment.createdAt | date: "%d-%m-%Y" }}
-            </p>
-            {% endfor %}
-    </ul>
-    
-</main>
+        <div class="experiment-tile">
+            <h2 class="experiment-title">{{ experiment.name }}</h2>
+            <div class="experiment-meta">
+                <span class="status-badge {{ experiment.status | downcase }}">
+                    {{ experiment.status }}
+                </span>
+                <span class="date-dot">•</span>
+                <span class="experiment-date">
+                    {{ experiment.createdAt | date: "%b %d, %Y" }}
+                </span>
+            </div>
+            <p class="experiment-description">{{ experiment.description }}</p>
+        </div>
+        {% endfor %}
+    </section>
 
-{% render 'partials/foot.liquid' %}
+    {% render 'partials/foot.liquid' %}
