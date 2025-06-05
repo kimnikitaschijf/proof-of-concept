@@ -32,7 +32,7 @@ app.get('/', async function (request, response) {
     const fileContents = await readFile('data/mock-data.json', { encoding: 'utf8' })
     const fileContentsJSON = JSON.parse(fileContents)
 
-    response.render('index.liquid', { data: fileContentsJSON });
+    response.render('index.liquid', { experiments: fileContentsJSON.experiments });
 });
 
 app.get('/404', async function (request, response) {
