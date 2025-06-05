@@ -6,40 +6,60 @@
 }
 
 .experiment-count {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-color); 
-  margin: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 1rem 2rem;
 }
 
 .experiments-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
     margin: 2rem;
-}
 
-.experiment-tile {
-    background-color: var(--blank-color);
-    border-radius: var(--border-radius-tile);
-    padding: 2rem;
-    box-shadow: var(--box-shadow);
-    font-family: sans-serif;
-}
+    @media screen and (min-width: 720px) {
+        gap: 2rem;
+        margin: 2.5rem;
+    }
 
-.experiment-title {
-    font-size: var(--font-size-medium);
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
+    @media screen and (min-width: 1020px) {
+        gap: 2.5rem;
+        margin: 3rem;
+    }
 
-.experiment-meta {
-    display: flex;
-    align-items: center;
-    font-size: var(--font-size-xsmall);
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+    .experiment-tile {
+        background-color: var(--blank-color);
+        border-radius: var(--border-radius-tile);
+        padding: 2rem;
+        box-shadow: var(--box-shadow);
+        font-family: sans-serif;
+
+        .experiment-title {
+            font-size: var(--font-size-medium);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .experiment-meta {
+            display: flex;
+            align-items: center;
+            font-size: var(--font-size-xsmall);
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+
+            .date-dot {
+                margin-right: 1rem;
+            }
+        }
+
+        .experiment-description {
+            font-size: var(--font-size-xsmall);
+            color: var(--primary-color);
+            line-height: 1.5;
+        }
+    }
 }
 
 .status-badge {
@@ -49,8 +69,6 @@
     font-size: 0.75rem;
     margin-right: 0.5rem;
     display: inline-block;
-    font-weight: bold;
-    text-transform: capitalize;
     box-shadow: var(--box-shadow);
 }
 
@@ -58,7 +76,6 @@
 .status-badge.active {
     background-color: var(--secondary-color);
     color: var(--text-color);
-
 }
 
 .status-badge.published {
@@ -74,15 +91,4 @@
 .status-badge.provisioning {
     background-color: var(--accent-color);
     color: var(--text-color);
-
-}
-
-.date-dot {
-    margin-right: 1rem;
-}
-
-.experiment-description {
-    font-size: var(--font-size-xsmall);
-    color: var(--primary-color);
-    line-height: 1.5;
 }

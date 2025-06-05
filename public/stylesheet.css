@@ -57,7 +57,7 @@ a {
     --spacing-huge: 3rem;
 
     /* Border radius */
-    --border-radius-tile: 5px;
+    --border-radius-tile: 10px;
     --border-radius-button: 15px;
 
     /* Padding */
@@ -76,7 +76,7 @@ a {
     --highlight-color-light: #fff381;
     --accent-color: #dacdff;
 
-    --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.116);
 }
 
 button {
