@@ -156,7 +156,7 @@ button {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--alt-text-color);
+    color: var(--blank-color);
     font-size: var(--font-size-xsmall);
     transition: color 0.2s ease-in-out;
 }
