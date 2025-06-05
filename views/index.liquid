@@ -1,0 +1,20 @@
+{% render 'partials/head.liquid' %}
+
+<main>
+
+    <h1>Experiments</h1>
+
+    <ul>
+        {% for experiment in experiments %}
+        <li>
+            <h2>{{ experiment.name }}</h2>
+            <p>{{ experiment.description }}</p>
+            <p>Status: {{ experiment.status }}</p>
+            <p>Aangemaakt op: {{ experiment.createdAt | date: "%d-%m-%Y" }}
+            </p>
+            {% endfor %}
+    </ul>
+    
+</main>
+
+{% render 'partials/foot.liquid' %}
