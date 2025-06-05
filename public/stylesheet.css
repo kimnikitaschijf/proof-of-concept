@@ -58,23 +58,26 @@ a {
     --spacing-huge: 3rem;
 
     /* Border radius */
-    --border-radius-tile: 2px;
-    --border-radius-button: 4px;
+    --border-radius-tile: 5px;
+    --border-radius-button: 15px;
 
     /* Padding */
-    --padding-button: 8px 16px;
+    --padding-button: 8px 10px;
     --padding-tile: 8px 10px;
 
     /* Colors */
-    --text-color: #161616;
-    --alt-text-color: #ffffff;
+    --text-color: #272727;
+    --blank-color: #ffffff;
     --primary-color: #005e5e;
     --secondary-color: #49e06d;
     --background-color: #f4f4f4;
     --secondary-background-color: #afd7f4;
     --secondary-background-color-light: #afd7f48b;
-    --hightlight-color: #fff381;
-    --hightlight-color-light: #fff381;
+    --highlight-color: #fff381;
+    --highlight-color-light: #fff381;
+    --accent-color: #dacdff;
+
+    --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 button {
@@ -193,4 +196,3 @@ button {
         transform: translateY(0);
     }
 }
-

@@ -1,0 +1,88 @@
+.main-title {
+    font-size: var(--font-size-large);
+    margin: 1.5rem 2rem;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.experiment-count {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color); 
+  margin: 1rem 2rem;
+}
+
+.experiments-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.experiment-tile {
+    background-color: var(--blank-color);
+    border-radius: var(--border-radius-tile);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    font-family: sans-serif;
+}
+
+.experiment-title {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.experiment-meta {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-xsmall);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.status-badge {
+    color: var(--blank-color);
+    padding: var(--padding-button);
+    border-radius: var(--border-radius-button);
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: var(--box-shadow);
+}
+
+/* Kleuren per status */
+.status-badge.active {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+}
+
+.status-badge.published {
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+}
+
+.status-badge.stale {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+}
+
+.status-badge.provisioning {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+
+}
+
+.date-dot {
+    margin-right: 1rem;
+}
+
+.experiment-description {
+    font-size: var(--font-size-xsmall);
+    color: var(--primary-color);
+    line-height: 1.5;
+}
