@@ -7,8 +7,8 @@ import express from 'express'
 // Importeer de Liquid package (ook als dependency via npm geïnstalleerd)
 import { Liquid } from 'liquidjs';
 
+// Haal de data lokaal op uit de /data map
 import { readFile } from 'node:fs/promises'
-
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
@@ -32,15 +32,12 @@ app.get('/', async function (request, response) {
     const fileContents = await readFile('data/mock-data.json', { encoding: 'utf8' })
     const fileContentsJSON = JSON.parse(fileContents)
 
-    response.render('index.liquid')
+    response.render('index.liquid', { data: fileContentsJSON });
 });
-
 
 app.get('/404', async function (request, response) {
     response.render('partials/404.liquid')
 })
-
-
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000; als deze applicatie ergens gehost wordt, waarschijnlijk poort 80
