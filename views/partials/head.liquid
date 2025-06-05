@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="icon" href="/assets/jan-ingenhousz-institute-logo.avif" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
@@ -12,7 +15,22 @@
 </head>
 
 <body>
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="/" class="logo-link">
+                <img src="/assets/jan-ingenhousz-institute-logo.avif" alt="Jan Ingenhousz Institute" class="logo-nav"
+                    width="80">
+            </a>
 
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <img src="/assets/menu.png" alt="Menu" width="40">
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="/404">Home</a>
+                <a href="/">Experiments</a>
+                <a href="/404">Profile</a>
+            </nav>
+        </div>
+    </header>
 </body>
-
-</html>
