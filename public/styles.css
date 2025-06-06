@@ -33,7 +33,7 @@
         border-radius: var(--border-radius-tile);
         padding: 2rem;
         box-shadow: var(--box-shadow);
-        font-family: sans-serif;
+        cursor: pointer;
 
         .experiment-title {
             font-size: var(--font-size-medium);
