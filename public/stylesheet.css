@@ -12,6 +12,7 @@ html {
     margin: 0;
     background-color: var(--background-color);
     font-family: var(--header-font);
+    font-display: swap;
     view-transition-name: default;
 }
 
@@ -110,7 +111,7 @@ li {
     navigation: auto;
 }
 
-/* MARK: Mobile menu */
+/* MARK: Header + container */
 .main-header {
     width: 100%;
     background-color: var(--primary-color);
@@ -137,24 +138,14 @@ li {
     cursor: pointer;
 }
 
+/* MARK: Menu standaard zichtbaar zonder JS */
 .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--primary-color);
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
     gap: 2rem;
-    width: 100%;
-    z-index: 99;
-}
-
-.nav-links.open {
-    display: flex;
-    animation: slideDown 0.3s ease-out forwards;
+    padding: 2rem 0;
+    background-color: var(--primary-color);
 }
 
 .nav-links a {
@@ -168,13 +159,30 @@ li {
     color: var(--secondary-color);
 }
 
-/* MARK: Desktop menu */
+/* MARK: JavaScript active class - menu wordt verbergbaar */
+.js .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.js .nav-links.open {
+    display: flex;
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+/* MARK: Desktop layout */
 @media (min-width: 720px) {
     .menu-toggle {
         display: none;
     }
 
-    .nav-links {
+    .nav-links,
+    .js .nav-links,
+    .js .nav-links.open {
         display: flex !important;
         position: static;
         flex-direction: row;
@@ -187,7 +195,7 @@ li {
     }
 }
 
-/* MARK: Menu animation */
+/* MARK: Animatie */
 @keyframes slideDown {
     0% {
         opacity: 0;
@@ -198,6 +206,11 @@ li {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Verberg toggle knop als JS uit staat */
+.no-js .menu-toggle {
+    display: none;
 }
 
 

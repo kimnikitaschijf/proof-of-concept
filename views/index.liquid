@@ -16,7 +16,7 @@
                 <span class="status-badge {{ experiment.status | downcase }}">
                     {{ experiment.status }}
                 </span>
-                <time class="experiment-date" datetime="{{ experiment.createdAt | date: " %Y-%m-%d" }}">
+                <time class="experiment-date" datetime="{{ experiment.createdAt | date: "%b %d, %Y" }}">
                     {{ experiment.createdAt | date: "%b %d, %Y" }}
                 </time>
             </div>
