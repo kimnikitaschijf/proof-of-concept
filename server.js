@@ -8,7 +8,7 @@ import express from 'express'
 import { Liquid } from 'liquidjs';
 
 // Haal de data lokaal op uit de /data map
-import { readFile } from 'node:fs/promises'
+// import { readFile } from 'node:fs/promises'
 
 // Maak een nieuwe Express applicatie aan, waarin we de server configureren
 const app = express()
@@ -28,12 +28,20 @@ app.engine('liquid', engine.express());
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
 
-app.get('/', async function (request, response) {
-    const fileContents = await readFile('data/mock-data.json', { encoding: 'utf8' })
-    const fileContentsJSON = JSON.parse(fileContents)
 
-    response.render('index.liquid', { experiments: fileContentsJSON.experiments });
+app.get('/', async function (request, response) {
+    const apiUrl = 'https://open-jii-api-mock.onrender.com/api/v1/experiments?status=published';
+    const fetchResponse = await fetch(apiUrl);
+    const data = await fetchResponse.json();
+
+    const experiments = data.data || data.experiments || data;
+
+    response.render('index.liquid', {
+        experiments,
+        title: 'Gepubliceerde Experimenten'
+    });
 });
+
 
 app.get('/404', async function (request, response) {
     response.render('partials/404.liquid')
