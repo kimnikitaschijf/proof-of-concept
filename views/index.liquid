@@ -25,6 +25,24 @@
         {% endfor %}
     </section>
 
+
+{% comment %} Post form {% endcomment %}
+
+    <form action="/create-experiment" method="POST">
+        <label for="name">Subject:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required></textarea><br><br>
+
+        <label for="data">Data (optional):</label><br>
+        <textarea id="data" name="data"></textarea><br><br>
+
+        <button type="submit">Create experiment</button>
+    </form>
+
+
+
 </main>
 
 {% render 'partials/foot.liquid' %}
