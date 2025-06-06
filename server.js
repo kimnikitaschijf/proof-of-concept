@@ -1,5 +1,3 @@
-console.log('Hier komt je server voor Sprint 12.')
-
 // Importeer het npm package Express (uit de door npm aangemaakte node_modules map)
 // Deze package is geïnstalleerd via `npm install`, en staat als 'dependency' in package.json
 import express from 'express'
