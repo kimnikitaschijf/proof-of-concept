@@ -2,29 +2,28 @@
 
 <main>
 
-  <h1 class="main-title">{{ title }}</h1>
+    <h1 class="main-title">{{ title }}</h1>
 
-  <p class="experiment-count">
-    {{ experiments | size }} experiments found
-  </p>
+    <p class="experiment-count">
+        {{ experiments | size }} experiments found
+    </p>
 
-  <section class="experiments-grid">
-    {% for experiment in experiments %}
-      <div class="experiment-tile">
-        <h2 class="experiment-title">{{ experiment.name }}</h2>
-        <div class="experiment-meta">
-          <span class="status-badge {{ experiment.status | downcase }}">
-            {{ experiment.status }}
-          </span>
-          <span class="date-dot">•</span>
-          <span class="experiment-date">
-            {{ experiment.createdAt | date: "%b %d, %Y" }}
-          </span>
-        </div>
-        <p class="experiment-description">{{ experiment.description }}</p>
-      </div>
-    {% endfor %}
-  </section>
+    <section class="experiments-grid">
+        {% for experiment in experiments %}
+        <article class="experiment-tile">
+            <h2 class="experiment-title">{{ experiment.name }}</h2>
+            <div class="experiment-meta">
+                <span class="status-badge {{ experiment.status | downcase }}">
+                    {{ experiment.status }}
+                </span>
+                <time class="experiment-date" datetime="{{ experiment.createdAt | date: " %Y-%m-%d" }}">
+                    {{ experiment.createdAt | date: "%b %d, %Y" }}
+                </time>
+            </div>
+            <p class="experiment-description">{{ experiment.description }}</p>
+        </article>
+        {% endfor %}
+    </section>
 
 </main>
 
