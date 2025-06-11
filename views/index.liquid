@@ -8,6 +8,29 @@
         {{ experiments | size }} experiments found
     </p>
 
+    {% comment %} Post form {% endcomment %}
+
+    <button id="openDialogBtn">New experiment</button>
+
+    <dialog id="experimentDialog">
+        <form method="POST" action="/create-experiment">
+            <h2 class="form-title">New experiment</h2>
+
+            <label for="name">Subject</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="description">Description</label><br>
+            <textarea id="description" name="description" required></textarea><br><br>
+
+            <label for="data">Data (optional)</label><br>
+            <textarea id="data" name="data"></textarea><br><br>
+
+            <button type="submit" class="create-button">Create experiment</button>
+            <button type="button" id="closeDialogBtn">Close</button>
+        </form>
+    </dialog>
+
+
     <section class="experiments-grid">
         {% for experiment in experiments %}
         <article class="experiment-tile">
@@ -16,7 +39,7 @@
                 <span class="status-badge {{ experiment.status | downcase }}">
                     {{ experiment.status }}
                 </span>
-                <time class="experiment-date" datetime="{{ experiment.createdAt | date: "%b %d, %Y" }}">
+                <time class="experiment-date" datetime="{{ experiment.createdAt | date: " %b %d, %Y" }}">
                     {{ experiment.createdAt | date: "%b %d, %Y" }}
                 </time>
             </div>
@@ -24,24 +47,6 @@
         </article>
         {% endfor %}
     </section>
-
-
-{% comment %} Post form {% endcomment %}
-
-    <form action="/create-experiment" method="POST">
-        <label for="name">Subject:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="description">Description:</label><br>
-        <textarea id="description" name="description" required></textarea><br><br>
-
-        <label for="data">Data (optional):</label><br>
-        <textarea id="data" name="data"></textarea><br><br>
-
-        <button type="submit">Create experiment</button>
-    </form>
-
-
 
 </main>
 

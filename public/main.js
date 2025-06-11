@@ -6,3 +6,14 @@ function toggleMenu() {
     nav.classList.toggle("open");
 }
 
+ const dialog = document.getElementById('experimentDialog');
+    const openBtn = document.getElementById('openDialogBtn');
+    const closeBtn = document.getElementById('closeDialogBtn');
+
+    openBtn.addEventListener('click', () => {
+        dialog.showModal(); // Gebruik show() als je geen modal gedrag wilt
+    });
+
+    closeBtn.addEventListener('click', () => {
+        dialog.close();
+    });

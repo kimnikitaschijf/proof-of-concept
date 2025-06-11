@@ -27,39 +27,27 @@ app.get('/', async function (request, response) {
     });
 });
 
+app.post('/create-experiment', function(request, response) {
+  var name = request.body.name;
+  var description = request.body.description;
+  var data = request.body.data;
 
-
-
-app.post('/create-experiment', async function (request, response) {
-    try {
-        const { name, description, data } = request.body;
-
-        const apiResponse = await fetch('https://open-jii-api-mock.onrender.com/api/v1/experiments', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name, description, data })
-        });
-
-        const result = await apiResponse.json();
-
-        if (!apiResponse.ok) {
-            console.error('API error:', result);
-            return response.status(apiResponse.status).send('Error creating experiment.');
-        }
-
+  fetch('https://open-jii-api-mock.onrender.com/api/v1/experiments', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: name, description: description, data: data })
+  })
+  .then(function(apiResponse) {
+    return apiResponse.json().then(function(result) {
+      if (!apiResponse.ok) {
+        console.error('API error:', result);
+        response.status(apiResponse.status).send('Error creating experiment.');
+      } else {
         response.send('Experiment successfully created with ID: ' + result.id);
-
-    } catch (error) {
-        console.error('Server error:', error);
-        response.status(500).send('Server error while creating experiment.');
-    }
+      }
+    });
+  })
 });
-
-
-
-
-
-
 
 app.get('/404', async function (request, response) {
     response.render('partials/404.liquid');
