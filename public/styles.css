@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
-    margin: 2rem;
+    /* margin: 2rem; */
 
     @media screen and (min-width: 720px) {
         gap: 2rem;
@@ -96,4 +96,79 @@
 .status-badge.provisioning {
     background-color: var(--accent-color);
     color: var(--text-color);
+}
+
+#openDialogBtn {
+    margin: 1rem 2rem;
+    border-radius: var(--border-radius-button);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: var(--padding-button);
+    box-shadow: var(--box-shadow);
+}
+
+dialog {
+    border: none;
+    margin: auto;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--primary-color);
+
+    form {
+        /* width: 20rem; */
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        .form-title {
+            margin: 1.5rem;
+            text-align: center;
+            color: var(--secondary-color);
+            font-size: var(--font-size-large);
+        }
+
+        label {
+            color: var(--blank-color);
+            margin-bottom: 0.5rem;
+        }
+
+        input {
+            padding: 0.5rem;
+            border: none;
+            font-size: var(--font-size-medium);
+            border-radius: var(--border-radius-tile);
+        }
+
+        textarea {
+            padding: 0.5rem;
+            font-size: var(--font-size-medium);
+            border: none;
+            border-radius: var(--border-radius-tile);
+        }
+
+        .create-button {
+            border-radius: var(--border-radius-tile);
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+            border: none;
+            padding: var(--padding-button);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 1rem;
+            font-weight: bold;
+            font-size: var(--font-size-small);
+        }
+
+        #closeDialogBtn {
+            border-radius: var(--border-radius-tile);
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+            border: none;
+            padding: var(--padding-button);
+            box-shadow: var(--box-shadow);
+            font-weight: bold;
+            font-size: var(--font-size-small);
+        }
+    }
 }

@@ -58,7 +58,7 @@ a {
     --spacing-huge: 3rem;
 
     /* Border radius */
-    --border-radius-tile: 10px;
+    --border-radius-tile: 5px;
     --border-radius-button: 15px;
 
     /* Padding */
@@ -68,7 +68,7 @@ a {
     /* Colors */
     --text-color: #272727;
     --blank-color: #ffffff;
-    --primary-color: #005e5e;
+    --primary-color: #014d4d;
     --secondary-color: #49e06d;
     --background-color: #f4f4f4;
     --secondary-background-color: #afd7f4;
@@ -122,7 +122,7 @@ li {
 
 .nav-container {
     margin: 0 2rem;
-    padding: 1rem;
+    padding: 1rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
