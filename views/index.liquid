@@ -31,10 +31,12 @@
     </dialog>
 
 
+    
     <section class="experiments-grid">
         {% for experiment in experiments %}
-        <article class="experiment-tile">
-            <h2 class="experiment-title">{{ experiment.name }}</h2>
+
+            <article class="experiment-tile">
+            <a href="/{{ experiment.id }}"><h2 class="experiment-title">{{ experiment.name }}</h2></a>
             <div class="experiment-meta">
                 <span class="status-badge {{ experiment.status | downcase }}">
                     {{ experiment.status }}
