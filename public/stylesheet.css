@@ -311,12 +311,25 @@ footer {
 /* MARK: Dialog animation */
 
 @keyframes dialogOpen {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-  }
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* MARK: Dark mode colors */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --text-color: #016565;
+        --blank-color: #000000;
+        --primary-color: #8de8f9;;
+        --secondary-color: #249f40;
+        --highlight-color: #fff381;
+    }
 }
