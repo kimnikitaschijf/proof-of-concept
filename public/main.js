@@ -6,14 +6,15 @@ function toggleMenu() {
     nav.classList.toggle("open");
 }
 
- const dialog = document.getElementById('experimentDialog');
-    const openBtn = document.getElementById('openDialogBtn');
-    const closeBtn = document.getElementById('closeDialogBtn');
+  const html = document.documentElement;
+  html.classList.remove('no-js');
+  html.classList.add('js');
 
-    openBtn.addEventListener('click', () => {
-        dialog.showModal(); // Gebruik show() als je geen modal gedrag wilt
-    });
+  const dialog = document.getElementById('experimentDialog');
+  const openBtn = document.getElementById('openDialogBtn');
+  const closeBtn = document.getElementById('closeDialogBtn');
 
-    closeBtn.addEventListener('click', () => {
-        dialog.close();
-    });
+  dialog.removeAttribute('open');
+
+  openBtn.addEventListener('click', () => dialog.showModal());
+  closeBtn.addEventListener('click', () => dialog.close());
