@@ -19,13 +19,14 @@
 .dashboard-header {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin: 1.5rem 1rem;
+    gap: 2rem;
+    margin: 1.5rem 2rem;
     align-items: stretch;
 
     @media (min-width: 720px) {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
+        /* links uitlijnen */
         align-items: center;
     }
 }
@@ -34,7 +35,6 @@
 .search-filter-group {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 
     @media (min-width: 720px) {
         flex-direction: row;
@@ -58,7 +58,12 @@
         width: 500px;
         max-width: 300px;
         border-radius: var(--border-radius-left);
-        margin-left: 2rem;
+        margin-left: 0;
+        /* margin reset */
+        margin-right: 1rem;
+        /* kleine ruimte rechts */
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -81,7 +86,13 @@
     overflow: hidden;
     width: 90%;
     margin: auto;
-    transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+
+    @media (min-width: 720px) {
+        margin: 0;
+        /* margin resetten op desktop */
+        width: auto;
+        /* geen 90% breedte meer */
+    }
 }
 
 /* Specific styling for .add-button */
@@ -367,23 +378,23 @@ dialog form {
 
 /* MARK: JS-enhanced dialog */
 .js dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform-origin: center;
-  border: none;
-  border-radius: 8px;
-  padding: 1rem;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  z-index: 1000;
-  opacity: 0;
-  animation: dialogOpen 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    opacity: 0;
+    animation: dialogOpen 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 /* backdrop styling */
 .js dialog::backdrop {
-  background: var(--backdrop);
+    background: var(--backdrop);
 }
 
 
