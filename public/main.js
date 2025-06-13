@@ -6,15 +6,14 @@ function toggleMenu() {
     nav.classList.toggle("open");
 }
 
-  const html = document.documentElement;
-  html.classList.remove('no-js');
-  html.classList.add('js');
+const dialog = document.getElementById('experimentDialog');
+const openBtn = document.getElementById('openDialogBtn');
+const closeBtn = document.getElementById('closeDialogBtn');
 
-  const dialog = document.getElementById('experimentDialog');
-  const openBtn = document.getElementById('openDialogBtn');
-  const closeBtn = document.getElementById('closeDialogBtn');
+openBtn.addEventListener('click', () => {
+    dialog.showModal(); 
+});
 
-  dialog.removeAttribute('open');
-
-  openBtn.addEventListener('click', () => dialog.showModal());
-  closeBtn.addEventListener('click', () => dialog.close());
+closeBtn.addEventListener('click', () => {
+    dialog.close();
+});
