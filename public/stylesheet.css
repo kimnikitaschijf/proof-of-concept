@@ -328,8 +328,69 @@ footer {
         --background-color: #121212;
         --text-color: #016565;
         --blank-color: #000000;
-        --primary-color: #8de8f9;;
+        --primary-color: #8de8f9;
+        ;
         --secondary-color: #249f40;
         --highlight-color: #fff381;
     }
+}
+
+/* MARK: Loading state & succes state */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.create-button {
+    position: relative;
+    padding-left: 2.5rem;
+    font-weight: bold;
+    border-radius: var(--border-radius-tile);
+    padding: var(--padding-button);
+    box-shadow: var(--box-shadow);
+    font-size: var(--font-size-small);
+    margin-bottom: 1rem;
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.create-button.loading::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.create-button.success::before {
+    content: "✔";
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.create-button.loading,
+.create-button.success {
+    cursor: default;
+    opacity: 0.8;
+    box-shadow: none;
+}
+
+.create-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

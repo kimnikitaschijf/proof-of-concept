@@ -1,10 +1,9 @@
 import express from 'express';
-
 import { Liquid } from 'liquidjs';
 
-// import { readFile } from 'node:fs/promises'
-
 const app = express();
+
+app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -44,17 +43,24 @@ app.get('/:id', async function (request, response) {
 app.post('/create-experiment', async function (request, response) {
   const { name, description, data } = request.body;
 
+  const experiment = {
+    name,
+    description,
+    data,
+    status: "published",
+    visibility: "public",
+    embargoIntervalDays: 0,
+    createdAt: new Date().toISOString()
+  };
+
   await fetch('https://open-jii-api-mock.onrender.com/api/v1/experiments', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, description, data })
+    body: JSON.stringify(experiment)
   });
 
   response.redirect('/');
 });
-
-
-
 
 app.get('/404', async function (request, response) {
   response.render('partials/404.liquid');

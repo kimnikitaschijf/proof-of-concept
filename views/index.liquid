@@ -24,10 +24,10 @@
     <p class="experiment-count" aria-live="polite">
         {{ experiments | size }} experiments found
     </p>
-
     <section class="no-js">
-        <dialog id="experimentDialog" class="fallback-dialog" role="dialog" aria-labelledby="dialog-title">
-            <form method="POST" action="/create-experiment">
+        <dialog id="experimentDialog" class="fallback-dialog" role="dialog" data-enhanced="create-experiment-form"
+            aria-labelledby="dialog-title">
+            <form method="POST" action="/create-experiment" data-enhanced="create-experiment-form">
                 <h2 class="form-title" id="dialog-title">New experiment</h2>
 
                 <label for="name">Subject</label><br>
@@ -45,8 +45,9 @@
         </dialog>
 
         <noscript>
-            <dialog open class="fallback-dialog" role="dialog" aria-labelledby="dialog-title-noscript">
-                <form method="POST" action="/create-experiment">
+            <dialog open class="fallback-dialog" role="dialog" data-enhanced="create-experiment-form"
+                aria-labelledby="dialog-title-noscript">
+                <form method="POST" action="/create-experiment" data-enhanced="create-experiment-form">
                     <h2 class="form-title" id="dialog-title-noscript">New experiment</h2>
 
                     <label for="name">Subject</label><br>
@@ -83,5 +84,58 @@
         {% endfor %}
     </section>
 </main>
+
+<script type="module">
+    {% comment %} Listen for form submissions {% endcomment %}
+    document.addEventListener('submit', async function (event) {
+        const form = event.target;
+
+        {% comment %} Only handle forms with data - enhanced attribute {% endcomment %}
+        if (!form.hasAttribute('data-enhanced')) return;
+
+        {% comment %} Prevent the default form submit behavior {% endcomment %}
+        event.preventDefault();
+
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+
+        {% comment %} Disable button and show feedback {% endcomment %}
+        submitButton.disabled = true;
+        submitButton.innerHTML = 'Creating...';
+
+        {% comment %} Collect form data, including clicked button's name and value {% endcomment %}
+        const formData = new FormData(form);
+        if (event.submitter) {
+            formData.append(event.submitter.name, event.submitter.value);
+        }
+
+        {% comment %} Convert form data to a plain object {% endcomment %}
+        const formObject = Object.fromEntries(formData.entries());
+
+        try {
+            {% comment %} Send form data as JSON to the server {% endcomment %}
+            const response = await fetch(form.action, {
+                method: form.method,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formObject)
+            });
+
+            {% comment %} If response not ok, throw an error {% endcomment %}
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error('Fetch error:', errorText);
+                throw new Error('Server error');
+            }
+
+            {% comment %} Show success and reload page {% endcomment %}
+            submitButton.innerHTML = '✓ Created!';
+            setTimeout(() => {
+                window.location.reload();
+            }, 2500);
+    });
+</script>
+
 
 {% render 'partials/foot.liquid' %}
