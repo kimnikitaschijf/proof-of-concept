@@ -2,12 +2,26 @@
 
 <main>
 
-    <h1 class="main-title">{{ experiment.name }}</h1>
+    <section class="d-experiment-card">
 
-    {% comment %} Post form {% endcomment %}
+        <article class="d-experiment-detail">
+            <h1 class="d-main-title">{{ experiment.name }}</h1>
+
+            <div class="d-experiment-meta">
+                <span class="d-status-badge {{ experiment.status | downcase }}">
+                    {{ experiment.status }}
+                </span>
+                <time class="d-experiment-date" datetime="{{ experiment.createdAt | date: " %Y-%m-%d" }}">
+                    {{ experiment.createdAt | date: "%b %d, %Y" }}
+                </time>
+            </div>
+
+            <p class="d-experiment-description">{{ experiment.description }}</p>
+        </article>
 
 
 
+    </section>
 
 </main>
 

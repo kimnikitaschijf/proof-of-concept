@@ -50,11 +50,10 @@ app.post('/create-experiment', async function (request, response) {
     body: JSON.stringify({ name, description, data })
   });
 
-  const fetchResponse = await fetch('https://open-jii-api-mock.onrender.com/api/v1/experiments?status=published');
-  const experiments = await fetchResponse.json();
-
-  response.render('index.liquid', { experiments });
+  response.redirect('/');
 });
+
+
 
 
 app.get('/404', async function (request, response) {
