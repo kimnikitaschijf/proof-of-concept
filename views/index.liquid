@@ -134,8 +134,18 @@
             setTimeout(() => {
                 window.location.reload();
             }, 2500);
+        } catch (err) {
+            {% comment %} On error, reset button and log error {% endcomment %}
+            console.error(err);
+            submitButton.innerHTML = 'Error!';
+            setTimeout(() => {
+                submitButton.innerHTML = originalButtonText;
+                submitButton.disabled = false;
+            }, 2000);
+        }
     });
 </script>
+
 
 
 {% render 'partials/foot.liquid' %}
