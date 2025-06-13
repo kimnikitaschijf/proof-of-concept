@@ -228,6 +228,9 @@ footer {
     @media screen and (min-width: 720px) {
         padding: 2rem 3rem;
         margin: 0;
+        flex-direction: row;
+        justify-content: center;
+        gap: 7rem;
     }
 
     .copyright-text {
