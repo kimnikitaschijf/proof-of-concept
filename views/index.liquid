@@ -5,6 +5,7 @@
 <main id="main-content" tabindex="-1">
     <h1 class="main-title">{{ title }}</h1>
 
+    {% comment %} Search, filter, form {% endcomment %}
     <section class="dashboard-header">
 
         <div class="search-filter-group">
@@ -24,6 +25,8 @@
     <p class="experiment-count" aria-live="polite">
         {{ experiments | size }} experiments found
     </p>
+
+    {% comment %} Dialog with JS enabled {% endcomment %}
     <section class="no-js">
         <dialog id="experimentDialog" class="fallback-dialog" role="dialog" data-enhanced="create-experiment-form"
             aria-labelledby="dialog-title">
@@ -44,6 +47,7 @@
             </form>
         </dialog>
 
+        {% comment %} Dialog with NO JS enabled {% endcomment %}
         <noscript>
             <dialog open class="fallback-dialog" role="dialog" data-enhanced="create-experiment-form"
                 aria-labelledby="dialog-title-noscript">
@@ -65,6 +69,7 @@
         </noscript>
     </section>
 
+    {% comment %} Experiments {% endcomment %}
     <section class="experiments-grid">
         {% for experiment in experiments %}
         <article class="experiment-tile">
@@ -85,6 +90,7 @@
     </section>
 </main>
 
+{% comment %} POST form script with loading & succes state {% endcomment %}
 <script type="module">
     {% comment %} Listen for form submissions {% endcomment %}
     document.addEventListener('submit', async function (event) {
