@@ -1,5 +1,6 @@
 import express from 'express';
 import { Liquid } from 'liquidjs';
+import { v4 as uuidv4 } from 'uuid';
 
 const app = express();
 
@@ -28,7 +29,7 @@ app.get('/', async function (request, response) {
 
 app.get('/:id', async function (request, response) {
   const id = request.params.id;
-  const idUrl = `https://open-jii-api-mock.onrender.com/api/v1/experiments?status=published&id=${id}`;
+  const idUrl = `https://open-jii-api-mock.onrender.com/api/v1/experiments/${id}`;
 
   const fetchResponse = await fetch(idUrl);
   const data = await fetchResponse.json();
@@ -44,6 +45,7 @@ app.post('/create-experiment', async function (request, response) {
   const { name, description, data } = request.body;
 
   const experiment = {
+    id: uuidv4(),
     name,
     description,
     data,
