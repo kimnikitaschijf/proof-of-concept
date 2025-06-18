@@ -40,7 +40,7 @@ a {
     --font-size-small: clamp(1rem, 1vw + 0.25rem, 1.125rem);
     /* ~16–18px */
     --font-size-xsmall: clamp(1rem, 0.75vw + 0.25rem, 1rem);
-    /* ~16px vast */
+    /* ~16px fixed */
     --font-size-menu: var(--font-size-xsmall);
 
     /* Line heights */
@@ -77,6 +77,15 @@ a {
     --highlight-color: #fff381;
     --highlight-color-light: #fff381;
     --accent-color: #dacdff;
+
+    /* Colors for confetti */
+    --primary-color-h: 180;
+    --secondary-color-h: 135;
+    --secondary-background-color-h: 210;
+    --highlight-color-h: 54;
+    --accent-color-h: 260;
+    --complement-red-h: 0;
+    --complement-pink-h: 330;
 
     --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.116);
     --backdrop: rgba(0, 0, 0, 0.588);
@@ -150,7 +159,7 @@ li {
     cursor: pointer;
 }
 
-/* MARK: Menu standaard zichtbaar zonder JS */
+/* MARK: Menu visible by default without JS */
 .nav-links {
     display: flex;
     flex-direction: column;
@@ -194,7 +203,7 @@ footer a:hover::after {
     transform-origin: left;
 }
 
-/* MARK: JavaScript active class - menu wordt verbergbaar */
+/* MARK: JavaScript active class - menu becomes toggleable */
 .js .nav-links {
     display: none;
     position: absolute;
@@ -230,7 +239,7 @@ footer a:hover::after {
     }
 }
 
-/* MARK: Animatie */
+/* MARK: Animation */
 @keyframes slideDown {
     0% {
         opacity: 0;
@@ -313,7 +322,6 @@ footer {
 }
 
 /* MARK: Dialog animation */
-
 @keyframes dialogOpen {
     0% {
         opacity: 0;
@@ -339,7 +347,7 @@ footer {
     }
 }
 
-/* MARK: Loading state & succes state */
+/* MARK: Loading state & success state */
 @keyframes spin {
     to {
         transform: rotate(360deg);
@@ -397,4 +405,32 @@ footer {
 .create-button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
+}
+
+/* Confetti animation when a post is successful */
+.confetto-style {
+    width: calc(.25em + 1.25em * var(--size));
+    height: calc(.25em + 1.25em * var(--size));
+    background-color: hsl(var(--color), 100%, 50%);
+
+    position: fixed;
+    top: -1.5em;
+    left: calc(3em + (100% - 6em) * var(--posX));
+    z-index: 99999;
+
+    animation:
+        confettoValt calc(3s + 2s * var(--duration)) calc(var(--delay) * 3s) linear;
+
+    transition: opacity 0.5s ease-out;
+}
+
+@keyframes confettoValt {
+    0% {
+        transform: translateY(0) rotateX(0) rotateY(0) rotateZ(0);
+    }
+
+    100% {
+        transform:
+            translateY(calc(100vh + 3em)) perspective(20em) rotateY(calc(2turn + 4turn * var(--rotateY))) translateZ(calc(1em + 3em * var(--turn))) rotateX(calc(2turn + 4turn * var(--rotateX))) rotateZ(calc(2turn + 4turn * var(--rotateZ)));
+    }
 }
