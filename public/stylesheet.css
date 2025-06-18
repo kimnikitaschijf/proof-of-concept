@@ -419,7 +419,7 @@ footer {
     z-index: 99999;
 
     animation:
-        confettoValt calc(3s + 2s * var(--duration)) calc(var(--delay) * 3s) linear;
+        confettoValt calc(1.5s + 1s * var(--duration)) calc(var(--delay) * 3s) linear;
 
     transition: opacity 0.5s ease-out;
 }
