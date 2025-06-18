@@ -2,10 +2,20 @@
 /* Main title & header */
 .main-title {
     font-size: var(--font-size-large);
-    margin: 1rem 2rem;
+    margin: 2rem;
     color: var(--primary-color);
     font-weight: bolder;
     padding: 1rem 0rem;
+    text-align: center;
+
+    @media (min-width: 720px) {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    @media (min-width: 1020px) {
+        margin-left: 3rem;
+    }
 }
 
 /* MARK: Section */
@@ -13,21 +23,27 @@
 .dashboard-header {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin: 1.5rem 2rem;
+    gap: 1rem;
+    margin: 1rem;
     align-items: stretch;
 
     @media (min-width: 720px) {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        margin: 0 2rem;
+    }
+
+
+    @media (min-width: 1020px) {
+        margin: 1rem 3rem;
     }
 
     /* MARK: Div */
     /* Search & filter section */
     .search-filter-group {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
         @media (min-width: 720px) {
             flex-direction: row;
@@ -38,7 +54,7 @@
         /* Search input field */
         .search-input {
             padding: var(--padding-button);
-            border-radius: var(--border-radius-tile);
+            border-radius: var(--border-radius-left);
             font-size: var(--font-size-small);
             background-color: var(--blank-color);
             color: var(--text-color);
@@ -57,9 +73,25 @@
         }
     }
 
+    .search-button {
+        position: relative;
+        background-color: var(--primary-color);
+        color: var(--blank-color);
+        border: none;
+        border-radius: var(--border-radius-right);
+        padding: var(--padding-button);
+        font-weight: bold;
+        font-size: var(--font-size-small);
+        cursor: pointer;
+        box-shadow: var(--box-shadow);
+        overflow: hidden;
+        width: 70%;
+        margin: auto;
+
+    }
+
     /* MARK: Buttons */
     /* Dashboard buttons base styling */
-    .search-button,
     .filter-button,
     .create-button,
     #closeDialogBtn,
@@ -75,7 +107,7 @@
         cursor: pointer;
         box-shadow: var(--box-shadow);
         overflow: hidden;
-        width: 90%;
+        width: 100%;
         margin: auto;
 
         @media (min-width: 720px) {
@@ -103,8 +135,8 @@
         background-color: var(--secondary-color);
         color: var(--text-color);
         border-color: var(--primary-color);
-        width: 90%;
-        margin: 2rem auto;
+        width: 100%;
+        margin-bottom: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -181,10 +213,20 @@
 /* MARK: P */
 .experiment-count {
     font-size: 1rem;
-    font-weight: bold;
-    color: var(--text-color);
-    margin: 2rem;
-    padding: 0 1rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    @media (min-width: 720px) {
+        text-align: left;
+        margin: 1.5rem 2rem;
+    }
+
+    @media (min-width: 1020px) {
+        text-align: left;
+        margin: 2rem 3rem;
+    }
 }
 
 /* MARK: Dialog element (NO JS & JS) */
@@ -285,6 +327,10 @@ dialog {
         border-radius: var(--border-radius-tile);
         box-shadow: var(--box-shadow);
         z-index: 1;
+
+        @media (min-width: 1020px) {
+            width: 100%;
+        }
     }
 
     .fallback-dialog form {
@@ -324,19 +370,18 @@ dialog {
 /* MARK: Section */
 /* Experiment tiles grid */
 .experiments-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1.5rem;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
 
     @media (min-width: 720px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 2rem;
-        margin: 2.5rem;
+        margin: 2rem;
     }
 
     @media (min-width: 1020px) {
         gap: 2.5rem;
-        margin: 3rem;
+        margin: 1rem 3rem;
     }
 
     /* MARK: Article */
@@ -443,6 +488,32 @@ dialog {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MARK: Detail page styling */
 .d-experiment-card {
     background-color: var(--blank-color);
@@ -454,7 +525,67 @@ dialog {
 
 .d-main-title {
     font-size: var(--font-size-large);
-    margin: 1.5rem 2rem;
+    margin: 1rem;
     color: var(--primary-color);
     font-weight: bolder;
+}
+
+/* Experiment data content */
+.d-experiment-meta {
+    display: flex;
+    font-size: var(--font-size-xsmall);
+    color: var(--primary-color);
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+.d-status-badge {
+    color: var(--blank-color);
+    padding: var(--padding-button);
+    border-radius: var(--border-radius-button);
+    font-size: 0.75rem;
+    display: inline-block;
+    box-shadow: var(--box-shadow);
+    width: fit-content;
+
+    &.active {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+
+    &.published {
+        background-color: var(--secondary-background-color);
+        color: var(--text-color);
+    }
+
+    &.stale {
+        background-color: var(--highlight-color);
+        color: var(--text-color);
+    }
+
+    &.provisioning {
+        background-color: var(--accent-color);
+        color: var(--text-color);
+    }
+}
+
+/* Dot icon */
+.d-experiment-date::before {
+    content: "•";
+    margin: 0 0.3rem;
+    color: var(--primary-color);
+    user-select: none;
+}
+
+.d-experiment-description {
+    font-size: var(--font-size-xsmall);
+    color: var(--primary-color);
+    line-height: 1.5;
+    margin: 1rem;
+}
+
+.columns-grid {
+    display: grid;
 }
