@@ -27,19 +27,45 @@ app.get('/', async function (request, response) {
   });
 });
 
+
+
+
+
 app.get('/:id', async function (request, response) {
   const id = request.params.id;
-  const idUrl = `https://open-jii-api-mock.onrender.com/api/v1/experiments/${id}`;
+  const idResponse = await fetch (`https://open-jii-api-mock.onrender.com/api/v1/experiments/${id}`);
 
-  const fetchResponse = await fetch(idUrl);
-  const data = await fetchResponse.json();
-
-  const experiment = Array.isArray(data) ? data[0] : data;
+  const idData = await idResponse.json();
+  
+  const columnData = idData.data.columns
+  console.log(columnData)
 
   response.render('detail.liquid', {
-    experiment
+    experiment: idData,
+    column: columnData
   });
 });
+
+// app.get('/experiment/:id', async (req, res) => {
+//     // make a page for the selected project on the homepage
+//     const experimentId = req.params.id;
+
+//     const homeResponse = await fetch(`https://open-jii-api-mock.onrender.com/api/v1/experiments/${experimentId}`); //get the data of selected project with the filter
+
+//     const experimentData = await homeResponse.json();
+
+//     let experimentColumns
+
+//     if (experimentData.data){ 
+//        experimentColumns = experimentData.data.columns
+//     }
+//     // console.log(experimentColumns) 
+
+//     res.render('experiment', { experiment: experimentData, column: experimentColumns});
+// });
+
+
+
 
 app.post('/create-experiment', async function (request, response) {
   const { name, description, data } = request.body;
