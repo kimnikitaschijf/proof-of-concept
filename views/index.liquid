@@ -139,11 +139,14 @@
                 body: JSON.stringify(formObject)
             });
 
-            // Toon succes state en herlaad pagina
-            submitButton.innerHTML = '✓ Created!';
+            // Toon succes state en activeer confetti
+            submitButton.innerHTML = '✓ Experiment reated!';
+            partyPopper();
+
+            // Herlaad na korte tijd de pagina
             setTimeout(() => {
                 window.location.reload();
-            }, 2500);
+            }, 4000);
         })
     };
 
