@@ -17,9 +17,29 @@
             </div>
 
             <p class="d-experiment-description">{{ experiment.description }}</p>
+
+            {% if experiment.data %}
+            <h2>Data:</h2>
+            <p>Rows:{{ experiment.data.totalRows }}</p>
+
+            {% if experiment.data.columns %}
+            <h3>Columns</h3>
+
+            <ul>
+                {% for col in experiment.data.columns %}
+                <section class="columns-grid">
+                    <span>{{ col.name }}</span>
+                    <span>{{ col.type_text }}</span>
+                </section>
+
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            {% endif %}
+
+
         </article>
-
-
 
     </section>
 
